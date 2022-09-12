@@ -1,0 +1,40 @@
+.videoResponsive {
+    overflow: hidden;
+    padding-bottom: 32%;
+    position: relative;
+    height: 0;
+
+    @media (max-width: 1561px) {
+      height: 120px;
+    }
+
+    @media (max-width: 1025px) {
+      height: 320px;
+    }
+
+    @media (max-width: 769px) {
+      height: 200px;
+    }
+
+    @media (max-width: 426px) {
+      height: 160px;
+    }
+
+    @media (max-width: 321px) {
+      height: 160px;
+    }
+  }
+  
+  .videoResponsive{
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
+        @media (max-width: 321px) {
+          height: 400px;
+        }
+    }
+  }
