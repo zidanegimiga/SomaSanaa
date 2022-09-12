@@ -4,7 +4,9 @@ import styles from './Hero.module.scss';
 const Hero = () => {
   return (
     <div className={styles.heroContainer}>
-        Hero
+      <div>
+        <h1></h1>
+      </div>      
     </div>
   )
 }
