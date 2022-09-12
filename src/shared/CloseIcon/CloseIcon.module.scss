@@ -1,0 +1,26 @@
+.close{
+  font-weight: bolder;
+  font-size: 48px;
+  font-family: Rubik;
+  position: absolute;
+  right: 10%;
+  top: 3%;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all 0.7s;
+
+  @media (max-width: 769px) {
+    right: 8%;
+    top: 1%;
+  }
+  @media (max-width: 426px) {
+    right: 8%;
+    top: 0.1%;
+    font-size: 24px;
+  }
+
+  &:hover{
+    transform: rotate(180deg);
+    color: #DFA139;
+  }
+}
