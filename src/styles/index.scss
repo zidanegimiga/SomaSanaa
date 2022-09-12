@@ -5,6 +5,54 @@
   margin: 0px;
 }
 
-h1{
-  font-size: 200px;
+body{
+  position: relative;
+  overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DFA139; 
+  border-radius: 4px;
+}
+
+.Modal{
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  right: 150px;
+  bottom: 40px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+  @media (max-width: 769px) {
+    top: 72px;
+    bottom: 24px;
+    right: 80px;
+    left: 80px;        
+  }
+  @media (max-width: 426px) {
+    top: 32px;
+    bottom: 16px;
+    right: 32px;
+    left: 32px;       
+  }
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000097;
+}
+
