@@ -3,6 +3,68 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 560px;
+  height: auto;
   width: 100%;
+  padding-top: 96px;
+  padding-left: 48px;
+  padding-bottom: 40px;
+}
+
+.titleContainer{
+  position: relative;
+}
+
+.line{
+  position: absolute;
+  border-top: 8px solid #DFA139;
+  width: 248px;
+  left: 16%;
+}
+
+.title {
+  font-family: "Cooper";
+  font-size: 56px;
+  color: #494949; 
+}
+
+.subTitle{
+  font-family: "Rubik";
+  color: #494949;
+  font-size: 24px;
+  margin-top: 32px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+.buttonsContainer{
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.searchBarInput{
+  height: 48px;
+  border: 0px none ;
+  border-radius: 8px 0px 0px 8px;
+  margin-left: 16px;
+  padding: 8px 24px;
+  width: 240px;
+  outline: none;
+  font-family: 'Rubik';
+  font-size: 16px;
+  transition: all 500ms;
+
+  &:focus{
+    width: 480px;
+  }
+}
+
+.searchBarButton{
+  border: none;
+  background-color: white;
+  height: 64px;
+  width: 48px;
+  padding: 8px;
+  border-radius: 0px 8px 8px 0px;
+  cursor: pointer;
 }
