@@ -1,4 +1,10 @@
 @import "./variables/index.scss";
+@font-face {
+  font-family: 'Cooper';
+  src: url('../../public/Cooper-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+  }
 
 *{
   padding: 0px;
@@ -53,6 +59,7 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #00000097;
+  background-color: rgb(50 50 50 / 89%);
+  z-index: 50;
 }
 
