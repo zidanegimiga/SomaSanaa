@@ -5,14 +5,14 @@ import Hero from "features/Home/Hero";
 import Classes from "features/Home/Classes";
 import Modal from 'react-modal';
 import LessonPopUp from "features/Home/LessonPopUp";
-import Nav from '../features/Home/Nav';
+import Nav from "features/Home/Nav";
 
 Modal.setAppElement("#__next");
 
 export default function Index({ mockData }) {  
   const router = useRouter();
   const {lesson} = router.query;
-  
+
   return (
     <>
       <Head>
@@ -25,7 +25,7 @@ export default function Index({ mockData }) {
       </Suspense>
       <Modal
         className="Modal"
-        overLayClassName="Overlay"
+        overlayClassName="Overlay"
         isOpen={!!router.query.lesson} 
         onRequestClose={() => router.push("/")}
       >
