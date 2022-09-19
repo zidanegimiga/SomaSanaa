@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link'
-import imgCard from '../../../../public/CardImage.png'
+import Link from 'next/link';
+import imgCard from '../../../../public/CardImage.png';
 import style from './ClassCard.module.scss';
 
 const ClassCard = ({data}) => {
