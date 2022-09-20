@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Link from 'next/link';
 import style from './Nav.module.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
@@ -28,7 +29,7 @@ const Nav = () => {
   return (
     <>
       <div className={style.NavContainer}>
-        <p>SomaSanaa</p>        
+        <Link href="/" > <p>SomaSanaa</p> </Link>        
         <div className={style.menuBtn} onClick={handleClick}>
           <GiHamburgerMenu  className={style.hamburger} />
         </div>        
