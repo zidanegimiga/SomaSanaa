@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import style from './Nav.module.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
@@ -29,7 +30,9 @@ const Nav = () => {
   return (
     <>
       <div className={style.NavContainer}>
-        <Link href="/" > <p>SomaSanaa</p> </Link>        
+        <Link href="/" >
+          <Image width={184} height={96} src="/logo.png" alt="logo"/>
+        </Link>        
         <div className={style.menuBtn} onClick={handleClick}>
           <GiHamburgerMenu  className={style.hamburger} />
         </div>        
