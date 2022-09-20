@@ -5,6 +5,9 @@ import {FaSearch} from 'react-icons/Fa';
 
 const Hero = () => {
   const [focus, setFocus] = useState(false);
+  const handleSearch = (e) =>{
+    e.preventDefault();
+  }
 
   return (
     <>      
@@ -29,8 +32,12 @@ const Hero = () => {
                   onFocus={() => setFocus(true)}
                   onBlur={() => setFocus(false)} 
                 />
-                <button className={styles.searchBarButton} type='submit'>
-                  <FaSearch />
+                <button 
+                  className={styles.searchBarButton}
+                  type='submit'
+                  onClick={handleSearch}
+                >
+                    <FaSearch />
                 </button>
               </div>
             </form>          
