@@ -19,7 +19,7 @@ export default function Index({ payload, id }) {
         <title> SomaSanaa </title>
       </Head>
       <Nav />
-      <Hero />
+      <Hero payload={payload}/>
       <Suspense>
         <Classes data={payload}/>
       </Suspense>

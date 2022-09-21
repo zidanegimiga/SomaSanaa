@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './Button.module.scss';
 
-const Button = ({text}) => {
+const Button = ({text, action}) => {
   return (
-    <div className={styles.buttonContainer}>
+    <button 
+      className={styles.buttonContainer}
+      onClick={action}
+    >
         {text}
-    </div>
+    </button>
   )
 }
 

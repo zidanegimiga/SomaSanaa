@@ -1,12 +1,23 @@
 import React, {useState} from 'react';
+import {useRouter} from 'next/router';
 import styles from './Hero.module.scss';
 import Button from 'shared/Button';
 import {FaSearch} from 'react-icons/Fa';
 
-const Hero = () => {
+const Hero = ({payload}) => {
   const [focus, setFocus] = useState(false);
+  const router = useRouter();
+  
   const handleSearch = (e) =>{
     e.preventDefault();
+  }
+  
+  /** Routes user to random video page */
+  function randomVideo(e){
+    e.preventDefault();
+    const randomId = Math.ceil(Math.random() * 10) - 1;
+    const randomVideo = payload[randomId]
+    router.push(`/masterclass/${randomVideo.id}`)
   }
 
   return (
@@ -22,7 +33,7 @@ const Hero = () => {
            Elevate yourself with one of these videos.  
         </div>
         <div className={styles.buttonsContainer}>
-          <Button text="SURPRISE ME!"/>
+          <Button text="SURPRISE ME!" action={randomVideo}/>
           <div className={styles.searchBar}>
             <form>
               <div className={styles.inputElements}>
