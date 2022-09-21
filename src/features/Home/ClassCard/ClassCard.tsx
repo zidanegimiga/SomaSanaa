@@ -16,7 +16,7 @@ const ClassCard = ({data}) => {
         as={`/masterclass/${data.id}`}>
         <h4>{data?.title}</h4>
       </Link>
-        <h5>{data?.author}</h5>
+        <h5>{data?.instructor}</h5>
         <p>{data?.description}</p>
       </div>
     </div>

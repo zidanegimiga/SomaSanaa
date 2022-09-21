@@ -20,25 +20,25 @@ const ReadMore = ({ children }) => {
   );
 };
 
-const LessonPopUp = ({ mockData, id }) => {
+const LessonPopUp = ({ payload, id }) => {
+  const masterclass = payload?.find((masterclass) => masterclass?.id === id);
+  
   return (
     <>
         <div className={style.modalBody}>
-          <YoutubeEmbedder embedId={mockData[id-1]?.embedCode} />
+          <YoutubeEmbedder embedId={masterclass?.youtubeEmbedID} />
           <div className={style.modalDescription}>
-            <h2>{mockData[id-1]?.title}</h2>
-            <h3>{mockData[id-1]?.author}</h3>
-            <h4>Runtime: 20 minutes</h4>
-            <ReadMore>{mockData[id-1]?.description}</ReadMore>            
+            <h2>{masterclass?.title}</h2>
+            <h3>{masterclass?.author}</h3>
+            {/* <h4>Runtime: 20 minutes</h4> */}
+            <ReadMore>{masterclass?.description}</ReadMore>            
           </div>
           <div className={style.suggestedSection}>
             <h2>More Like this</h2>
             <div className={style.suggestedVideos}>
-              <ClassCard data={mockData[0]} />
-              <ClassCard data={mockData[1]} />
-              <ClassCard data={mockData[2]} />
-              <ClassCard data={mockData[3]} />
-              <ClassCard data={mockData[0]} />
+              {payload?.map((suggestion, index) => 
+                <ClassCard data={suggestion} key={index}/>
+              )}
             </div>
           </div>
         </div>
