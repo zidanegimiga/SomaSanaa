@@ -12,7 +12,7 @@ const ReadMore = ({ children }) => {
   };
   return (
     <p className={style.text}>
-      {isReadMore ? text?.slice(0, 200) : text}
+      {isReadMore ? text?.slice(0, 150) : text}
       <button onClick={toggleReadMore} className={style.readOrHideText}>
         {isReadMore ? "Read more" : " Show less"}
       </button>
@@ -29,8 +29,9 @@ const LessonPopUp = ({ payload, id }) => {
           <YoutubeEmbedder embedId={masterclass?.youtubeEmbedID} />
           <div className={style.modalDescription}>
             <h2>{masterclass?.title}</h2>
-            <h3>{masterclass?.author}</h3>
-            {/* <h4>Runtime: 20 minutes</h4> */}
+            <h3>{masterclass?.instructor}</h3>
+            <h4>Runtime: 20 minutes</h4>
+            <hr/>
             <ReadMore>{masterclass?.description}</ReadMore>            
           </div>
           <div className={style.suggestedSection}>

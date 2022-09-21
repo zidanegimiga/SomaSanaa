@@ -1,40 +1,65 @@
 .videoResponsive {
-    overflow: hidden;
-    padding-bottom: 32%;
-    position: relative;
-    height: 0;
+  overflow: hidden;
+  margin-bottom: 24px;
+  position: relative;
+  border-radius: 16px;
+  height: 480px;
 
-    @media (max-width: 1561px) {
-      height: 120px;
+  @media (max-width: 1407px) {
+    height: 480px;
+  }
+
+  @media (max-width: 1026px) {
+    height: 480px;
+  }
+
+  @media (max-width: 769px) {
+    height: 480px;
+  }
+
+  @media (max-width: 426px) {
+    height: 380px;
+    width: 100%;
+    position: fixed;
+    top: 5%;
+    z-index: 70;
+  }
+
+  @media (max-width: 321px) {
+    height: 380px;
+  }
+
+  iframe {
+    left: 0px;
+    top: 0px;
+    height: 480px;
+    width: 100vw;
+    position: absolute;
+    border-radius: 16px;
+
+    @media (max-width: 1407px) {
+      height: 480px;
+       
     }
 
-    @media (max-width: 1025px) {
-      height: 320px;
+    @media (max-width: 1026px) {
+      height: 480px;
     }
 
     @media (max-width: 769px) {
-      height: 200px;
+      height: 480px;
     }
 
     @media (max-width: 426px) {
-      height: 160px;
+      height: 380px;
+      width: 100%;
+      position: fixed;
+      top: 5%;
+      z-index: 70;
     }
 
     @media (max-width: 321px) {
-      height: 160px;
+      height: 380px;
     }
-  }
-  
-  .videoResponsive{
-    iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-
-        @media (max-width: 321px) {
-          height: 400px;
-        }
-    }
-  }
+ }
+}

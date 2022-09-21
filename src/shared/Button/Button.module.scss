@@ -10,6 +10,11 @@
     font-family: 'Rubik';
     border: none;
 
+    &:hover{
+      background-color: #f6ad30;
+      box-shadow: #808080 0px 0px 4px;      
+    }
+
     @media(max-width: 330px) {
       height: 48px;
       font-size: 14px;

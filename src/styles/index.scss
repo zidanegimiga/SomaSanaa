@@ -31,14 +31,22 @@ body{
 .Modal{
   position: absolute;
   top: 80px;
-  left: 150px;
-  right: 150px;
+  left: 40px;
+  right: 40px;
   bottom: 40px;
   border: none;
   outline: none;
   border-radius: 16px;
   overflow-y: scroll;
   background-color: #f2f2f2;
+
+  @media (max-width: 1025px) {
+    top: 50px;
+    bottom: 50px;
+    right: 40px;
+    left: 40px;
+  }
+
   @media (max-width: 769px) {
     top: 72px;
     bottom: 24px;
@@ -46,10 +54,13 @@ body{
     left: 80px;        
   }
   @media (max-width: 426px) {
-    top: 32px;
-    bottom: 16px;
-    right: 32px;
-    left: 32px;       
+    width: 100%;
+    right: 0;
+    left: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 90vh;
+    top: 10%;       
   }
 }
 
@@ -59,7 +70,8 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(50 50 50 / 89%);
+  background-color: rgba(50, 50, 50, 0.922);
   z-index: 50;
 }
+
 

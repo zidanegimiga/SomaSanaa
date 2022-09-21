@@ -1,11 +1,13 @@
 .modalBody{  
-  background-color: #f2f2f2;
-  max-width: 100%;
-  height: 100%;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
   z-index: 60;
+  border-radius: 18px 18px 0px 0px;
+
   @media (max-width: 426px) {
     margin-top: 32px;
-    max-width: 85vw;
+    max-width: 100vw;
   }
   @media (max-width: 321px) {
     max-width: 90vw;
@@ -13,19 +15,38 @@
 }
 
 .modalDescription{
-  margin: 24px;
+  margin-top: 24px;
+  padding: 24px;
+  background-color: #ffffff;
+  
   h2{
     font-family: Rubik;
     color: rgb(29, 29, 29);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
+
+    @media (max-width: 2561px) {
+     margin-top: -256px;
+    }
+
+    @media (max-width: 1025px) {
+      font-size: 24px;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 1441px) {
+      font-size: 24px;
+      margin-top: 0px;
+    }
+    
     @media (max-width: 426px) {
       font-size: 24px;
+      padding-top: 360px;
     }
     @media (max-width: 321px) {
-      margin-bottom: 8px;
-      font-size: 16px;
+      font-size: 24px;
+      padding-top: 360px;
     }
   }
   h3{
@@ -33,14 +54,16 @@
     color: #323232;
     font-size: 16px;
     font-weight: 550;
+    margin-top: 16px;
   }
   h4{
     font-family: Rubik;
-    color: #817E7E;
-    font-size: 14px;
-    margin-bottom: 28px;
+    color: #323232;
+    font-size: 16px;
+    margin-bottom: 8px;
     font-weight: 400;
-    margin-top: 16px;
+    margin-top: 8px;
+    
     @media (max-width: 321px) {
       margin-bottom: 16px;
       font-size: 14px;
@@ -50,57 +73,100 @@
     font-family: Rubik;
     color: #817E7E;
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
     font-weight: normal;
-    line-height: 24px;    
+    line-height: 24px;
+
+    @media (max-width: 821px) {
+      margin-bottom: 20px;
+      line-height: 20px;
+    }    
   }
 
   button{
-    padding: 8px;    
+    padding: 2px;    
     border-radius: 4px;
     width: 100px;
     transition: all 0.3s;
     height: 28px;   
     border: none;
-    background-color: #DFA139;
-    color: white;
     height: 40px;
-    margin-left: 16px;       
+    margin-left: 16px;
+    font-weight: 800;
+    color: #2a2a2a;
+    background-color: #ffffff;
+    text-decoration: dashed 2px;
+    outline: none;
+    
+    &:hover{
+      background-color: #DFA139;
+      color: white;
+    }
   }
 
-  span{
-    color: #2a2a2a;
-    font-size: 16px;
-    font-weight: 700;
-  }
-  @media (max-width: 321px) {
+  @media (max-width: 426px) {
     margin-right: 16px;
+    width: 100vw;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 8px;
   }
 }
 
 .suggestedSection{
-  background-color: #e8e8e8;
+  background-color: #f3f0f0;
   padding: 24px;
   z-index: 60;
   display: flex;
   flex-direction: column;
   justify-content: left;
+  
   h2{
     font-family: Rubik;
     color: #232323;
     font-size: 28px;
-    margin-bottom: 48px;
+    margin-bottom: 16px;
     font-weight: 500;
   }
+
+  @media (max-width: 426px) {
+    width: 100vw;
+    padding: 10px;
+    height: fit-content;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;          
+  }
+
+  @media (max-width: 769px) {
+    display: flex;
+    justify-content: center;       
+  }
+  
 }
 
 .suggestedVideos{
-  display: grid;
-  grid-template-columns: 300px 300px 300px 300px 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
   overflow-x: scroll;
   overflow-y: hidden;
   padding-bottom: 32px;
+
+  @media (max-width: 821px) {
+    display: flex;
+    flex-wrap: wrap;       
+  }
+
+  @media (max-width: 769px) {
+   display: flex;
+   justify-content: center;
+
+  }
 }
 
 .container{

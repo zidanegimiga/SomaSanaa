@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import Link from 'next/link';
 import {useRouter} from 'next/router';
 import styles from './Hero.module.scss';
 import Button from 'shared/Button';
@@ -6,12 +7,32 @@ import {FaSearch} from 'react-icons/Fa';
 
 const Hero = ({payload}) => {
   const [focus, setFocus] = useState(false);
-  const router = useRouter();
+  const [searchModal, setSearchModal] = useState(false);
+  const [searchData, setSearchData] = useState("");
+  const [searchResults, setSearchResults] = useState([])
   
+  const router = useRouter();
+
+  function handleSearchInput(e){
+    setSearchData(e.target.value);
+    const results = Array(payload?.find((result) => result.title === searchData || result.instructor === searchData ))
+    if (results){
+      setSearchResults(results);
+      setSearchModal(true);
+    }
+    console.log("Query: ", searchData)
+    console.log("Results", searchResults[0]?.id);  
+  }
+
   const handleSearch = (e) =>{
     e.preventDefault();
+    router.push(`/masterclass/${searchResults[0]?.id}`)
   }
-  
+
+  function handleBlur(){
+    
+  }
+
   /** Routes user to random video page */
   function randomVideo(e){
     e.preventDefault();
@@ -41,7 +62,10 @@ const Hero = ({payload}) => {
                   className={styles.searchBarInput}
                   placeholder={focus ? 'SEARCH BY INSTRUCTOR OR CATEGORY' : 'SEARCH'}
                   onFocus={() => setFocus(true)}
-                  onBlur={() => setFocus(false)} 
+                  onBlur={handleBlur}
+                  onChange={handleSearchInput}                 
+                  name="searchInput"
+                  value={searchData} 
                 />
                 <button 
                   className={styles.searchBarButton}
@@ -50,6 +74,22 @@ const Hero = ({payload}) => {
                 >
                     <FaSearch />
                 </button>
+                {
+                  searchModal  &&
+                  <div className={styles.searchResultModal}>
+                    {
+                      searchResults.length > 0 ?
+                      searchResults?.map((result, index) => (
+                        <Link href={`/masterclass/${result?.id}`} key={index}>
+                          <div key={index} className={styles.searchResult}>
+                            {result?.title}
+                          </div>
+                        </Link>
+                      )) :
+                      <div>No results found</div>
+                    }
+                  </div> 
+                }
               </div>
             </form>          
           </div>

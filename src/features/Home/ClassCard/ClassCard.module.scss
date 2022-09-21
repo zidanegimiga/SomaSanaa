@@ -1,14 +1,24 @@
 .cardContainer{
-  height: 700px;
+  min-height: 700px;
   background-color: #ffffff;
-  width: 100%;
+  width: 380px;
   border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: box-shadow 0.5s;
 
   &:hover{
-    box-shadow: 0 0 2.94118rem rgb(18 17 24 / 10%);
+    box-shadow: rgb(18 17 24 / 24%) 4px 4px 8px 4px;
+  }
+
+  @media (max-width: 1201px) {
+    width: 330px;        
+  }
+
+  @media (max-width: 321px) {
+    width: 280px;        
+  }
+
+  @media (max-width: 276px) {
+    width: 200px;        
   }
 }
 
@@ -21,7 +31,10 @@
     font-weight: 500;
     font-family: Rubik;
     color: #070606;
+    cursor: pointer;
     margin-bottom: 16px;
+    transition: all ease-in-out 0.7s;
+
     &:hover{
       text-decoration: underline;
     }
