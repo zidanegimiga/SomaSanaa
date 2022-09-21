@@ -13,7 +13,7 @@ const Hero = () => {
     <>      
       <div className={styles.heroContainer}>
         <div className={styles.titleContainer}>
-          <h1 className={styles.title}>Online <br/> Masterclasses <br/> for All Creatives</h1>
+          <h1 className={styles.title}>Online <br/> Masterclasses <br/> for All <span>Creatives</span></h1>
           <div className={styles.line}></div>
         </div>
         <div className={styles.subTitle}>

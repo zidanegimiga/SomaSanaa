@@ -8,4 +8,9 @@
     align-items: center;
     border-radius: 8px;
     font-family: 'Rubik';
+
+    @media(max-width: 330px) {
+      height: 48px;
+      font-size: 14px;
+    }
 }

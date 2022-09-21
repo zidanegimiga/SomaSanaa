@@ -4,10 +4,14 @@
   background-position: center;
   background-size: cover;
   height: auto;
-  width: 100%;
   padding-top: 96px;
   padding-left: 48px;
   padding-bottom: 40px;
+  @media(max-width: 426px) {
+    padding-top: 80px;
+    padding-left: 16px;
+    padding-bottom: 40px;   
+  }
 }
 
 .titleContainer{
@@ -17,14 +21,44 @@
 .line{
   position: absolute;
   border-top: 8px solid #DFA139;
+  border-radius: 30%;
   width: 248px;
-  left: 16%;
+  left: 14%;
+  @media(max-width: 426px) {
+    width: 190px;
+    left: 36%;
+  }
+  @media(max-width: 376px) {
+    width: 180px;
+    left: 40%;
+  }
+  @media(max-width: 330px) {
+    left: 40%;
+    width: 140px;
+    border-top: 6px solid #DFA139;
+  }
 }
 
 .title {
   font-family: "Cooper";
   font-size: 56px;
-  color: #494949; 
+  color: #494949;
+
+  @media(max-width: 769px) {
+    font-size: 44px;
+  }
+
+  @media(max-width: 426px) {
+    font-size: 40px;
+    line-height: 48px;
+    color:#242222;
+  }
+
+  @media(max-width: 376px) {
+    font-size: 32px;
+    line-height: 40px;
+    color:#242222;
+  } 
 }
 
 .subTitle{
@@ -34,12 +68,30 @@
   margin-top: 32px;
   line-height: 38px;
   font-weight: bold;
+  @media(max-width: 769px) {
+    font-size: 20px;
+    width: 80%;
+    line-height: 32px;
+  }
+  @media(max-width: 426px) {
+    font-size: 20px;
+    width: 80%;
+    line-height: 28px;
+    color:rgb(52, 49, 49);
+  }
+  @media(max-width: 330px) {
+    font-size: 16px;
+    line-height: 24px;;
+  }
+
 }
 
 .buttonsContainer{
   display: flex;
   margin-top: 32px;
-  margin-bottom: 32px;
+  @media(max-width: 426px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .searchBarInput{
@@ -53,9 +105,40 @@
   font-family: 'Rubik';
   font-size: 16px;
   transition: all ease-in-out 500ms;
+  
+  @media(max-width: 769px) {
+    width: 160px;
+  }
+
+  @media(max-width: 426px) {
+    margin-left: 0px;
+    margin-bottom: 16px;
+    width: 260px;
+  }
+
+  @media(max-width: 376px) {
+    width: 200px;
+  }
+
+  @media(max-width: 330px) {
+    width: 160px;
+  }
 
   &:focus{
     width: 480px;
+    @media(max-width: 769px) {
+      width: 320px;
+    }
+    @media(max-width: 426px) {
+      width: 300px;
+    }
+    @media(max-width: 376px) {
+      width: 260px;
+    }
+    @media(max-width: 330px) {
+      width: 170px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -72,4 +155,5 @@
   &:hover{
     background-color: #DFA139;
   }
+
 }
