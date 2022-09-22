@@ -13,6 +13,7 @@ Modal.setAppElement("#__next");
 export default function Index({ payload, id }) { 
   const router = useRouter();
   const {lesson} = router.query;
+  console.log(lesson)
 
   return (
     <>
