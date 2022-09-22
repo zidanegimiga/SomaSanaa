@@ -4,7 +4,7 @@ import {useRouter} from 'next/router';
 import Fuse from 'fuse.js';
 import Button from 'shared/Button';
 import styles from './Hero.module.scss';
-import {FaSearch} from 'react-icons/fa';
+// import {FaSearch} from 'react-icons/fa';
 
 const Hero = ({payload}) => {
   const [focus, setFocus] = useState(false);
@@ -85,7 +85,8 @@ const Hero = ({payload}) => {
                   type='submit'
                   onClick={handleSearch}
                 >
-                  <FaSearch />
+                  {/* <FaSearch /> */}
+                  Search
                 </button>
                 {
                   searchModal  &&
