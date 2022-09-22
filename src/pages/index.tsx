@@ -36,7 +36,11 @@ export default function Index({ payload, id }) {
 }
 
 export async function getServerSideProps(context){
-  const masterclasses = await fetch(`${process.env.VERCEL_URL}/api/masterclass/`);
+  const url =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : `${process.env.VERCEL_URL}`;
+  const masterclasses = await fetch(`${url}/api/masterclass/`);
   const payload = await masterclasses.json();
 
   return{
