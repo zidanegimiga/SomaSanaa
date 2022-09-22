@@ -36,7 +36,7 @@ export default function Index({ payload, id }) {
 }
 
 export async function getServerSideProps(context){
-  const masterclasses = await fetch(`http://localhost:3000/api/masterclass/`);
+  const masterclasses = await fetch(`/api/masterclass/`);
   const payload = await masterclasses.json();
 
   return{
