@@ -24,16 +24,30 @@ export default function LessonPage({lessons}){
 }
 
 export async function getServerSideProps(context){
-  const masterclasses = await fetch(`http://localhost:3000/api/masterclass/`);
-  const payload = await masterclasses.json();
-
-  if (!payload) {
+  if(process.env.NODE_ENV === "development"){
+    const masterclasses = await fetch(`http://localhost:3000/api/masterclass/`);
+    const payload = await masterclasses.json();
+    if (!payload) {
+      return {
+        notFound: true
+      };
+    }
+  
     return {
-      notFound: true
-    };
+      props: { lessons: payload }
+    };    
+  } 
+  else{
+    const masterclasses = await fetch(`${process.env.VERCEL_URL}/api/masterclass/`);
+    const payload = await masterclasses.json();
+    if (!payload) {
+      return {
+        notFound: true
+      };
+    }
+  
+    return {
+      props: { lessons: payload }
+    };   
   }
-
-  return {
-    props: { lessons: payload }
-  };
 }
