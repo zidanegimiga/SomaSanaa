@@ -6,6 +6,7 @@ import Classes from "features/Home/Classes";
 import Modal from 'react-modal';
 import LessonPopUp from "features/Home/LessonPopUp";
 import Nav from "features/Home/Nav";
+import {masterClassesData} from '../../data'
 
 Modal.setAppElement("#__next");
 
@@ -46,7 +47,7 @@ export async function getServerSideProps(context){
     }    
   } 
   else{
-    const masterclasses = await fetch(`soma-sanaa-nwvslg6ch-zidanegimiga.vercel.app/api/masterclass/`);
+    const masterclasses = await fetch(`${process.env.VERCEL_URL}/api/masterclass/`);
     const payload = await masterclasses.json();
     return{
       props:{
@@ -54,4 +55,12 @@ export async function getServerSideProps(context){
       }
     }    
   }
+
+  // const payload = masterClassesData;
+  // return{
+  //   props:{
+  //     payload,
+  //   }
+  // }
+
 }
