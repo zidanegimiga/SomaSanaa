@@ -6,7 +6,7 @@ import Classes from "features/Home/Classes";
 import Modal from 'react-modal';
 import LessonPopUp from "features/Home/LessonPopUp";
 import Nav from "features/Home/Nav";
-import {masterClassesData} from '../../data'
+// import {masterClassesData} from '../../data'
 
 Modal.setAppElement("#__next");
 
