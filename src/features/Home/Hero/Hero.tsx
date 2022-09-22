@@ -85,7 +85,7 @@ const Hero = ({payload}) => {
                   type='submit'
                   onClick={handleSearch}
                 >
-                    <FaSearch />
+                  <FaSearch />
                 </button>
                 {
                   searchModal  &&
