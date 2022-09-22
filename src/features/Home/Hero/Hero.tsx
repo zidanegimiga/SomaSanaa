@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
-import styles from './Hero.module.scss';
+import Fuse from 'fuse.js';
 import Button from 'shared/Button';
+import styles from './Hero.module.scss';
 import {FaSearch} from 'react-icons/Fa';
 
 const Hero = ({payload}) => {
@@ -13,15 +14,28 @@ const Hero = ({payload}) => {
   
   const router = useRouter();
 
+  // Search
+  const options = {
+    includeScore: true,
+    keys: [
+      {
+        name: 'title',
+        weight: 0.9
+      },
+      {
+        name: 'instructor',
+        weight: 0.8
+      }
+    ]
+  }
+  const fuse = new Fuse(payload, options)
+
   function handleSearchInput(e){
+    setSearchModal(true);
     setSearchData(e.target.value);
-    const results = Array(payload?.find((result) => result.title === searchData || result.instructor === searchData ))
-    if (results){
-      setSearchResults(results);
-      setSearchModal(true);
-    }
-    console.log("Query: ", searchData)
-    console.log("Results", searchResults[0]?.id);  
+    const results = fuse.search(searchData);
+    setSearchResults(results);
+    console.log("Results: ", results)    
   }
 
   const handleSearch = (e) =>{
@@ -29,8 +43,7 @@ const Hero = ({payload}) => {
     router.push(`/masterclass/${searchResults[0]?.id}`)
   }
 
-  function handleBlur(){
-    
+  function handleBlur(){    
   }
 
   /** Routes user to random video page */
@@ -79,14 +92,15 @@ const Hero = ({payload}) => {
                   <div className={styles.searchResultModal}>
                     {
                       searchResults.length > 0 ?
-                      searchResults?.map((result, index) => (
-                        <Link href={`/masterclass/${result?.id}`} key={index}>
-                          <div key={index} className={styles.searchResult}>
-                            {result?.title}
-                          </div>
-                        </Link>
+                      searchResults?.map((result, index) => (                        
+                        <div key={index} className={styles.searchResult}>
+                          <Link href={`/masterclass/${result?.item.id}`}>
+                            <p>{result?.item.title}</p>
+                          </Link>
+                          <span>By {result?.item.instructor}</span>
+                        </div>
                       )) :
-                      <div>No results found</div>
+                      <div className={styles.searchResult}>No results found</div>
                     }
                   </div> 
                 }
