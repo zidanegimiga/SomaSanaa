@@ -4,6 +4,7 @@ import Head from 'next/head'
 import LessonPopUp from 'features/Home/LessonPopUp';
 import Nav from 'features/Home/Nav';
 import styles from './lessons.module.scss'
+import {masterClassesData} from '../../../data'
 
 export default function LessonPage({lessons}){
     const router = useRouter();
@@ -24,30 +25,37 @@ export default function LessonPage({lessons}){
 }
 
 export async function getServerSideProps(context){
-  if(process.env.NODE_ENV === "development"){
-    const masterclasses = await fetch(`http://localhost:3000/api/masterclass/`);
-    const payload = await masterclasses.json();
-    if (!payload) {
-      return {
-        notFound: true
-      };
-    }
+  // if(process.env.NODE_ENV === "development"){
+  //   const masterclasses = await fetch(`http://localhost:3000/api/masterclass/`);
+  //   const payload = await masterclasses.json();
+  //   if (!payload) {
+  //     return {
+  //       notFound: true
+  //     };
+  //   }
   
-    return {
-      props: { lessons: payload }
-    };    
-  } 
-  else{
-    const masterclasses = await fetch(`${process.env.VERCEL_URL}/api/masterclass/`);
-    const payload = await masterclasses.json();
-    if (!payload) {
-      return {
-        notFound: true
-      };
-    }
+  //   return {
+  //     props: { lessons: payload }
+  //   };    
+  // } 
+  // else{
+  //   const masterclasses = await fetch(`${process.env.VERCEL_URL}/api/masterclass/`);
+  //   const payload = await masterclasses.json();
+  //   if (!payload) {
+  //     return {
+  //       notFound: true
+  //     };
+  //   }
   
-    return {
-      props: { lessons: payload }
-    };   
+  //   return {
+  //     props: { lessons: payload }
+  //   };   
+  // }
+
+  const payload = masterClassesData;
+  return{
+    props:{
+      lessons: payload,
+    }
   }
 }
