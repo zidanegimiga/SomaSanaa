@@ -36,16 +36,22 @@ export default function Index({ payload, id }) {
 }
 
 export async function getServerSideProps(context){
-  const url =
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
-      : `${process.env.VERCEL_URL}`;
-  const masterclasses = await fetch(`${url}/api/masterclass/`);
-  const payload = await masterclasses.json();
-
-  return{
-    props:{
-      payload,
-    }
+  if(process.env.NODE_ENV === "development"){
+    const masterclasses = await fetch(`http://localhost:3000/api/masterclass/`);
+    const payload = await masterclasses.json();
+    return{
+      props:{
+        payload,
+      }
+    }    
+  } 
+  else{
+    const masterclasses = await fetch(`soma-sanaa-nwvslg6ch-zidanegimiga.vercel.app/api/masterclass/`);
+    const payload = await masterclasses.json();
+    return{
+      props:{
+        payload,
+      }
+    }    
   }
 }
