@@ -8,7 +8,7 @@ const ClassCard = ({data}) => {
   return (
     <div className={style.cardContainer}>
       <div className={style.cardHeader}>
-        <Image alt='Thumbnail' src={imgCard} width={566} height={353}/>
+        <Image alt='Thumbnail' src={data.poster === "" ? imgCard : data.poster} width={566} height={353}/>
       </div>
       <div className={style.cardDescription}>
       <Link 
