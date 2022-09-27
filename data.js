@@ -22,7 +22,7 @@ export const masterClassesData = [
         instructor: "Jonas Nyacomba and Lindsay Obath",
         description: "In this Masterclass Jonas Nyacomba and Lindsay Obath who are founders of free mind session will take you through various topics that include genesis of free Mind Sessions, how to take the first step in curating a session and breaking down the walls we put ourselves in as humans.",
         youtubeEmbedID: "Teej3RpiiXc",
-        poster: ""        
+        poster: "/safeSpaces.png"        
     },
     {
         id: "HfgwJQD7tAk",
@@ -86,15 +86,7 @@ export const masterClassesData = [
         instructor: "Edu Ooro",
         description: "Edu Ooro is the Creatives Programs Manager and head choreographer at e Sarakasi Dome. Edwin “Edu'' to take dance lessons from a background of a parent who did not want him to pursue his dreams of becoming a dancer. He currently leaves and eats from the dance choreographies that he does and trains at the Sarakasi Dome. In this Master Mind, he takes you through the fundamentals to achieving the best in the dance profession.",
         youtubeEmbedID: "CV2MKE_jVX4",
-        poster: ""        
-    },
-    {
-        id: "Teej3RpiiXc",
-        title: "Reverse Brainstorming",
-        instructor: "Lyndsay Obath and Jonas Nyaomba",
-        description: "In this Masterclass Jonas Nyacomba and Lindsay Obath who are founders of free mind session will take you through various topics that include genesis of free Mind Sessions, how to take the first step in curating a session and breaking down the walls we put ourselves in as humans.",
-        youtubeEmbedID: "Teej3RpiiXc",
-        poster: ""        
+        poster: "/thrivingInDance.png"        
     },
     {
         id: "yM7mGhGbw04",
@@ -143,6 +135,22 @@ export const masterClassesData = [
         description: "Makadem is a prolific musician who has over the years mastered the art of playing the traditional Luo Nyatiti. In this Music Master he takes you through his instrument’s features, how to build and maintained it with brief insights on how to play one.",
         youtubeEmbedID: "BuR6MqWJAag",
         poster: "/musicMaster.png"        
+    },
+    {
+        id: "inf73acocgs",
+        title: "L.E.D Lighting",
+        instructor: "Tom Shea",
+        description: "Tom Shea is an amateur custom lighting engineering enthusiast, computer geek and hacker who happens to have been lucky enough to build large-scale stages and installations at a multitude of festivals and events across three different continents. He learned almost everything he knows from Googling stuff and then trying it. ",
+        youtubeEmbedID: "inf73acocgs",
+        poster: "/ledLighting.png"        
+    },
+    {
+        id: "0_Awn46Ad1g",
+        title: "Gig Economy",
+        instructor: "Kip Ketter",
+        description: "Kip Ketter is a creative producer who has scaled the heights in the creative sector through pushing onto his dreams. He studied in South Africa and after coming back to Kenya he has grown to be a strategist, a brand developer and a creative content producer. In this masterclass Kip Ketter takes you through the dynamics of the gig economy and networking within it.",
+        youtubeEmbedID: "0_Awn46Ad1g",
+        poster: "/ledLighting.png"        
     },
 ]
 
