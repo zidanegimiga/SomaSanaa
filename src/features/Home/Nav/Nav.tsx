@@ -32,7 +32,11 @@ const Nav = () => {
       <div className={style.NavContainer}>
         <Link href="/" >
           <Image width={184} height={96} src="/logo.png" alt="logo"/>
-        </Link>        
+        </Link>
+        <div className={style.navItemCenter}>
+          <p>HOME</p>
+          <div className={style.bottomLine}></div>
+        </div>        
         <div className={style.menuBtn} onClick={handleClick}>
           <GiHamburgerMenu  className={style.hamburger} />
         </div>        

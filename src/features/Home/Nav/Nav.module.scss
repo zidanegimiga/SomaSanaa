@@ -25,6 +25,20 @@
   }
 }
 
+.navItemCenter{
+  p{
+    font-family: Rubik;
+    font-size: 16px;
+
+  }
+}
+
+.bottomLine{
+  height: 4px;
+  background-color: #141414;
+  border-radius: 8px;
+}
+
 .hamburger{
   width: 80px;
   height: 40px;
@@ -35,6 +49,17 @@
     margin-right: 8px;
     width: 64px;
     height: 24px;    
+  }
+}
+
+.menuBtn{
+  svg{
+    transition: all ease-in-out 0.5s;
+  }
+  &:hover{
+    svg{
+      transform: scale(110%);
+    }
   }
 }
 
@@ -60,7 +85,11 @@
   text-align: center;
   font-family: Rubik;
   cursor: pointer;
+  transition: all ease-in-out 0.5s;
+
+
   &:hover{
+    font-size: 20px;
     background-color: #f6e6c4;
   }
 }
