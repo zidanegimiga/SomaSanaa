@@ -30,7 +30,7 @@ export const masterClassesData = [
         instructor: "Lindsay Obath",
         description: "In this masterclass Lindsay Obath takes you through body art while focusing on, hygiene and preserving products, navigating different skin tones, highlighting natural features, creating illusions, colour choices and line work.",
         youtubeEmbedID: "HfgwJQD7tAk",
-        poster: ""        
+        poster: "/bodyArt.png"        
     },
     {
         id: "bvf9Rf6XAt0",
@@ -38,7 +38,7 @@ export const masterClassesData = [
         instructor: "Ochieng Oneko",
         description: "In this Episode of the Masterminds Ochieng Oneko takes you through an introductory lesson in directing film by Kenyan film maker. Ochieng is a filmmaker who trained in EICAR, the international film school in Paris, during which he worked on about 3 to 4 dozen sets in various positions: Writer, Director, 1st Assistant Director, 2nd Assistant Director, Grip, Electric, Editor, etc.",
         youtubeEmbedID: "bvf9Rf6XAt0",
-        poster: ""        
+        poster: "/filmDirecting.png"        
     },
     {
         id: "srJ06K-m6d8",
@@ -46,15 +46,15 @@ export const masterClassesData = [
         instructor: "Wambui Kinyua",
         description: "Meet Wambui Kinyua, a social scientist with a major interest in the creative sector. She works as the project/ community manager at Acacia collective, as well as working as the curator at Santuri. She has over the years gathered a wealth of experience in project management and best practices and in this masterclass, she shares a thorough analysis on what it takes to create a community. What does successful organising entail?",
         youtubeEmbedID: "srJ06K-m6d8",
-        poster: ""        
+        poster: "/organisingAnOrganisation.png"        
     },
     {
         id: "1rT6x7CTKXU",
-        title: "Creating Colour Pallettes with Styling",
+        title: "Creating Colour Palettes with Styling",
         instructor: "Mohammed Ayieko",
         description: "Mohammed Ayieko is a Kenyan cinema director, whose creative agency lies in Pedagogy Drawing in his personal experiences to promote inclusive and diverse narratives. In this masterclass Ayieko takes you through the aspects of colour pelleting for a set and how best to match different outfits in a film production of or a picture shoot.",
         youtubeEmbedID: "1rT6x7CTKXU",
-        poster: ""        
+        poster: "/colorPalettes.png"        
     },
     {
         id: "5Hsjk1w3YgI",
@@ -62,7 +62,7 @@ export const masterClassesData = [
         instructor: "Abigael Akello Arunga",
         description: " Abigael Arunga is a writer and editor in the Kenyan and East Africa region for the past decade, and more recently, she has transitioned to a more global outlook and reach in writing with organizations such as INEND, Girls Globe, and the bill and Melinda gates Foundation. In this masterclass she takes the creatives into the basics of a good writer.",
         youtubeEmbedID: "5Hsjk1w3YgI",
-        poster: ""        
+        poster: "/writing.png"        
     },
     {
         id: "AuwYGk6Jqbw",
@@ -70,7 +70,7 @@ export const masterClassesData = [
         instructor: "Paola Melissa",
         description: "Welcome to the world of NFT (Non Fungible Tokens) which is taking the creative economy by storm. In this Masterclass, Paola Mellissa, a renowned NFT enthusiast who has mastered the art of creating NFTs, takes you through the introduction of NFTs and its uptake in Kenya. She highlights on how important the NFT growth is important in the creative economy while giving you hints on how to create them.",
         youtubeEmbedID: "AuwYGk6Jqbw",
-        poster: ""        
+        poster: "/nfts.png"        
     },
     {
         id: "xax6dJ6eWNE",
@@ -78,7 +78,7 @@ export const masterClassesData = [
         instructor: "Joe Peppih Kiragu",
         description: "Joe Peppih Kiragu has experience of over 15 years in photography and video. Joe in this masterclass introduces fundamental principles in professional photography. He also takes you through components of photography that are not directed to photography but are a note to everyone who wants to become a photographer. The topics he covers are understanding the human perception of vision, understanding light, camera basics and techniques to shape perception.",
         youtubeEmbedID: "xax6dJ6eWNE",
-        poster: ""        
+        poster: "/photography.png"        
     },
     {
         id: "CV2MKE_jVX4",
@@ -95,6 +95,54 @@ export const masterClassesData = [
         description: "In this Masterclass Jonas Nyacomba and Lindsay Obath who are founders of free mind session will take you through various topics that include genesis of free Mind Sessions, how to take the first step in curating a session and breaking down the walls we put ourselves in as humans.",
         youtubeEmbedID: "Teej3RpiiXc",
         poster: ""        
+    },
+    {
+        id: "yM7mGhGbw04",
+        title: "Podcasting",
+        instructor: "Kevin Mwachiro",
+        description: "Kevin describes himself as a storyteller.  He loves words and sounds and creating images in people’s minds. He is also a writer, a journalist and a podcaster.  For Kevin, podcasting is a way of bringing the love for words and sound together. Hence, Nipe Story. A storytelling podcast that features fictional short stories from Africa. During his session, Kevin will talk about his journey into podcasting, share tips on how to start a podcast and the lessons and challenges that he has gone through over the last three years.",
+        youtubeEmbedID: "yM7mGhGbw04",
+        poster: "/podcasting.png"        
+    },
+    {
+        id: "1zkyvOjoPmg",
+        title: "Podcasting",
+        instructor: "Lorella Jowi",
+        description: "Casting is one of the most fundamental parts of film production. A film that has mis-cast roles would often be doomed from before filming even begins. During casting, the casting director looks to fill the roles for characters in the script with actors based on how they fit the description of the character being cast; the look, personality, believability, likeability and the actors talent. Teaching the casting Master Class is Lorella Jowi, an East Africa based filmmaker, producer, casting director and voiceover artist. Based in Nairobi, work has taken her to Ethiopia, Rwanda, Uganda, Malawi, South Africa, France and Germany. ‘The Sea Turtles of Lamu’ (2015) ,a documentary produced by LoJ, was awarded at the Wildlife Conservation Film Festival.",
+        youtubeEmbedID: "1zkyvOjoPmg",
+        poster: "/casting.png"        
+    },
+    {
+        id: "lCIUQFzarnw",
+        title: "Rafiki Hub",
+        instructor: "Kate Snow",
+        description: "Kate snow is an actress and a creative who started acting at a young age. She was motivated to start the space where she would help the industry that helps create links between the creatives and the industry. It is a subscription membership platform that helps in a great way creatives who connect in the industry. Kate Snow talks about how the Rafiki Hub is connecting the creatives to the industry ",
+        youtubeEmbedID: "lCIUQFzarnw",
+        poster: "/rafikiHub.png"        
+    },
+    {
+        id: "lCIUQFzarnw",
+        title: "Brand Strategy",
+        instructor: "Antonia Kihara",
+        description: "In this masterclass Antonia Kihara who is a consultant takes you through understanding the basics in brand strategy. Brand Strategy is a long term plan to achieve a series of long term goals that ultimately result in the identification and preference of your brand to the consumers. A brand strategy helps you cultivate a strong business brand and helps define who you are and helps to focus your long term goals.",
+        youtubeEmbedID: "lCIUQFzarnw",
+        poster: "/brandStrategy.png"        
+    },
+    {
+        id: "CTP1hVwSE6U",
+        title: "Music Masters - Drumming",
+        instructor: "Oronjey",
+        description: "Ronjey is a drummer who takes us through his career in the music and education industries. He shares insights on how to maintain the traditional African drums.",
+        youtubeEmbedID: "CTP1hVwSE6U",
+        poster: "/drumming.png"        
+    },
+    {
+        id: "BuR6MqWJAag",
+        title: "Music Masters - Playing the Nyatiti",
+        instructor: "Makadem",
+        description: "Makadem is a prolific musician who has over the years mastered the art of playing the traditional Luo Nyatiti. In this Music Master he takes you through his instrument’s features, how to build and maintained it with brief insights on how to play one.",
+        youtubeEmbedID: "BuR6MqWJAag",
+        poster: "/musicMaster.png"        
     },
 ]
 
