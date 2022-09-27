@@ -30,7 +30,7 @@ const LessonPopUp = ({ payload, id }) => {
           <div className={style.modalDescription}>
             <h2>{masterclass?.title}</h2>
             <h3>{masterclass?.instructor}</h3>
-            <h4>Runtime: 20 minutes</h4>
+            {/* <h4>Runtime: 20 minutes</h4> */}
             <hr/>
             <ReadMore>{masterclass?.description}</ReadMore>            
           </div>
