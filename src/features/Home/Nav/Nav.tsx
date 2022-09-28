@@ -33,9 +33,9 @@ const Nav = () => {
         <Link href="/" >
           <Image width={184} height={96} src="/logo.png" alt="logo"/>
         </Link>        
-        <div className={style.menuBtn} onClick={handleClick}>
+        {/* <div className={style.menuBtn} onClick={handleClick}>
           <GiHamburgerMenu  className={style.hamburger} />
-        </div>        
+        </div>         */}
       </div>
       {
         menuOpen && (
