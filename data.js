@@ -98,7 +98,7 @@ export const masterClassesData = [
     },
     {
         id: "1zkyvOjoPmg",
-        title: "Podcasting",
+        title: "Casting",
         instructor: "Lorella Jowi",
         description: "Casting is one of the most fundamental parts of film production. A film that has mis-cast roles would often be doomed from before filming even begins. During casting, the casting director looks to fill the roles for characters in the script with actors based on how they fit the description of the character being cast; the look, personality, believability, likeability and the actors talent. Teaching the casting Master Class is Lorella Jowi, an East Africa based filmmaker, producer, casting director and voiceover artist. Based in Nairobi, work has taken her to Ethiopia, Rwanda, Uganda, Malawi, South Africa, France and Germany. ‘The Sea Turtles of Lamu’ (2015) ,a documentary produced by LoJ, was awarded at the Wildlife Conservation Film Festival.",
         youtubeEmbedID: "1zkyvOjoPmg",
