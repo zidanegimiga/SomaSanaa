@@ -10,10 +10,12 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta name="robots" content="all" />
+          <meta name="googlebot" content="index,follow" />
           <meta property="og:type" content="website" key="og-type" />
           <meta
             property="og:url"
-            content="https://somasanaa.vercel.app/"
+            content="https://somasanaa.com"
             key="og-url"
           />
           <meta
