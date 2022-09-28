@@ -106,14 +106,6 @@ export const masterClassesData = [
     },
     {
         id: "lCIUQFzarnw",
-        title: "Rafiki Hub",
-        instructor: "Kate Snow",
-        description: "Kate snow is an actress and a creative who started acting at a young age. She was motivated to start the space where she would help the industry that helps create links between the creatives and the industry. It is a subscription membership platform that helps in a great way creatives who connect in the industry. Kate Snow talks about how the Rafiki Hub is connecting the creatives to the industry ",
-        youtubeEmbedID: "lCIUQFzarnw",
-        poster: "/rafikiHub.png"        
-    },
-    {
-        id: "lCIUQFzarnw",
         title: "Brand Strategy",
         instructor: "Antonia Kihara",
         description: "In this masterclass Antonia Kihara who is a consultant takes you through understanding the basics in brand strategy. Brand Strategy is a long term plan to achieve a series of long term goals that ultimately result in the identification and preference of your brand to the consumers. A brand strategy helps you cultivate a strong business brand and helps define who you are and helps to focus your long term goals.",
@@ -150,7 +142,7 @@ export const masterClassesData = [
         instructor: "Kip Ketter",
         description: "Kip Ketter is a creative producer who has scaled the heights in the creative sector through pushing onto his dreams. He studied in South Africa and after coming back to Kenya he has grown to be a strategist, a brand developer and a creative content producer. In this masterclass Kip Ketter takes you through the dynamics of the gig economy and networking within it.",
         youtubeEmbedID: "0_Awn46Ad1g",
-        poster: "/ledLighting.png"        
+        poster: "/gigEconomy.png"        
     },
 ]
 
