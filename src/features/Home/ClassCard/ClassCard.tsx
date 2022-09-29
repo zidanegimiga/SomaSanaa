@@ -9,7 +9,12 @@ const ClassCard = ({data}) => {
   return (
     <div className={style.cardContainer}>
       <div className={style.cardHeader}>
-        <Image alt='Thumbnail' src={data.poster === "" ? imgCard : data.poster} width={566} height={271}/>
+        <Link  
+          href={`/?lesson=${data.id}`}
+          as={`/masterclass/${data.id}`}
+        >
+          <Image alt='Thumbnail' src={data.poster === "" ? imgCard : data.poster} width={566} height={271}/>
+        </Link>
       </div>
       <div className={style.cardDescription}>
         <Link 
