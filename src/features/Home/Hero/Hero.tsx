@@ -90,6 +90,9 @@ const Hero = ({payload}) => {
                 {
                   searchModal  &&
                   <div className={styles.searchResultModal}>
+                    <div className={styles.closeBtnContainer}>
+                      <div className={styles.closeBtn} onClick={()=>setSearchModal(false)}></div>
+                    </div>
                     {
                       searchResults.length > 0 ?
                       searchResults?.map((result, index) => (                        

@@ -1,6 +1,7 @@
 .heroContainer{
   background-image: url('/Hero-Image.png');
   background-repeat: no-repeat;
+  background-color: #F5ECDA;
   background-position: center;
   background-size: cover;
   height: auto;
@@ -194,8 +195,28 @@
   margin-left: 16px;
   height: fit-content;
   position: absolute;
+  padding-top: 16px;
   z-index: 10;
   top: 60px;  
+}
+
+.closeBtnContainer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeBtn{
+  width: 16px;
+  height: 16px;
+  margin: 8px;
+  cursor: pointer;
+  background-image: url("/closeBtnDark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover{
+    transform: scale(120%);
+  }
 }
 
 .searchResult{
