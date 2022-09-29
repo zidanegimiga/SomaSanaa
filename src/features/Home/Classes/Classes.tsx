@@ -3,38 +3,88 @@ import Link from "next/link";
 import style from "./Classes.module.scss";
 import ClassCard from "../ClassCard";
 
-const classPerView = 3;
+interface payLoadProps {
+  id: string;
+  title: string;
+  instructor: string;
+  description: string;
+  youtubeEmbedID: string;
+  poster: string;
+  category: string;
+}
 
-const Classes = ({ data }) => {
+interface classesProps {
+  data: payLoadProps[];
+  category?: string;
+  categoryTitle: string;
+}
+
+const Classes = ({ data, category, categoryTitle }: classesProps) => {
+  const classPerView = 3;
+  /**
+   * logic for the see more button
+   */
   const [next, setNext] = useState(classPerView);
-
   const seeMore = () => {
     setNext(next + classPerView);
   };
 
-  return (
-    <div className={style.ClassesSection}>
-      <h2> Recently Added</h2>
-      <hr className={style.horizontalLine} />
-      <div className={style.ClassesContainer}>
-        {data?.slice(0, next)?.map((lesson, index) => (
-          <div key={index}>
-            <ClassCard data={lesson} />
-          </div>
-        ))}
-      </div>
-      {next < data?.length && (
-        <div className={style.seeMoreBtn}>
-          <input
-            type="button"
-            value="See more"
-            onClick={seeMore}
-            className={style.button}
-          />
+  /**
+   * filtering data according to category
+   */
+  const payload = data.filter((entry) => {
+    return entry.category === category;
+  });
+
+  if (category) {
+    return (
+      <div className={style.ClassesSection}>
+        <h2>{categoryTitle}</h2>
+        <div className={style.horizontalLine}></div>
+        <div className={style.ClassesContainer}>
+          {payload?.slice(0, next)?.map((lesson, index) => (
+            <div key={index}>
+              <ClassCard data={lesson} />
+            </div>
+          ))}
         </div>
-      )}
-    </div>
-  );
+        {next < payload?.length && (
+          <div className={style.seeMoreBtn}>
+            <input
+              type="button"
+              value="See more"
+              onClick={seeMore}
+              className={style.button}
+            />
+          </div>
+        )}
+      </div>
+    );
+  } else {
+    return (
+      <div className={style.ClassesSection}>
+        <h2>{categoryTitle}</h2>
+        <div className={style.horizontalLine}></div>
+        <div className={style.ClassesContainer}>
+          {data?.slice(0, next)?.map((lesson, index) => (
+            <div key={index}>
+              <ClassCard data={lesson} />
+            </div>
+          ))}
+        </div>
+        {next < data?.length && (
+          <div className={style.seeMoreBtn}>
+            <input
+              type="button"
+              value="See more"
+              onClick={seeMore}
+              className={style.button}
+            />
+          </div>
+        )}
+      </div>
+    );
+  }
 };
 
 export default Classes;

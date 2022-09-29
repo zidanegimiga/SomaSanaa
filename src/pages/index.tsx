@@ -23,7 +23,11 @@ export default function Index({ payload, id }) {
       <Nav />
       <Hero payload={payload}/>
       <Suspense>
-        <Classes data={payload}/>
+        <Classes data={payload} categoryTitle="Recently Added"/>
+        <Classes data={payload} categoryTitle="Organisation" category="organisation"/>
+        <Classes data={payload} categoryTitle="Video Production" category="video-production"/>
+        <Classes data={payload} categoryTitle="Music" category="music"/>
+        <Classes data={payload} categoryTitle="Non-fungible Tokens" category="nft"/>
       </Suspense>
       <Modal
         className="Modal"
@@ -38,25 +42,6 @@ export default function Index({ payload, id }) {
 }
 
 export async function getServerSideProps(context){
-  // if(process.env.NODE_ENV === "development"){
-  //   const masterclasses = await fetch(`http://localhost:3000/api/masterclass/`);
-  //   const payload = await masterclasses.json();
-  //   return{
-  //     props:{
-  //       payload,
-  //     }
-  //   }    
-  // } 
-  // else{
-  //   const masterclasses = await fetch(`${process.env.VERCEL_URL}/api/masterclass/`);
-  //   const payload = await masterclasses.json();
-  //   return{
-  //     props:{
-  //       payload,
-  //     }
-  //   }    
-  // }
-
   const payload = masterClassesData;
   return{
     props:{
