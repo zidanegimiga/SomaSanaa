@@ -5,12 +5,29 @@
   background-position: center;
   background-size: cover;
   height: auto;
-  padding-top: 96px;
-  padding-left: 48px;
+  padding-top: 164px;
+  padding-left: 164px;
+  padding-right: 164px;
   padding-bottom: 40px;
+  
+  @media(max-width: 1441px) {
+    padding-top: 80px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 40px;   
+  }
+  
+  @media(max-width: 769px) {
+    padding-top: 80px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;   
+  }
+  
   @media(max-width: 426px) {
     padding-top: 80px;
     padding-left: 16px;
+    padding-right: 16px;
     padding-bottom: 40px;   
   }
 }
@@ -19,31 +36,15 @@
   position: relative;
 }
 
-.line{
-  position: absolute;
-  border-top: 8px solid #DFA139;
-  border-radius: 30%;
-  width: 248px;
-  left: 16%;
-  @media(max-width: 426px) {
-    width: 190px;
-    left: 36%;
-  }
-  @media(max-width: 376px) {
-    width: 180px;
-    left: 40%;
-  }
-  @media(max-width: 330px) {
-    left: 40%;
-    width: 140px;
-    border-top: 6px solid #DFA139;
-  }
-}
-
 .title {
   font-family: "Cooper";
   font-size: 56px;
   color: #494949;
+
+  span{
+    border-bottom: 8px solid #DFA139;
+    border-radius: 8px;
+  }
 
   @media(max-width: 769px) {
     font-size: 44px;
@@ -69,9 +70,11 @@
   margin-top: 32px;
   line-height: 38px;
   font-weight: bold;
+  width: 50%;
+
   @media(max-width: 769px) {
     font-size: 20px;
-    width: 80%;
+    width: 50%;
     line-height: 32px;
   }
   @media(max-width: 426px) {
@@ -93,148 +96,4 @@
   @media(max-width: 426px) {
     flex-direction: column-reverse;
   }
-}
-
-.searchBarInput{
-  height: 48px;
-  border: 0px none ;
-  border-radius: 8px 0px 0px 8px;
-  margin-left: 16px;
-  padding: 8px 24px;
-  width: 430px;
-  outline: none;
-  font-family: 'Rubik';
-  font-size: 16px;
-  transition: all ease-in-out 500ms;
-  
-  @media(max-width: 769px) {
-    width: 160px;
-  }
-
-  @media(max-width: 426px) {
-    margin-left: 0px;
-    margin-bottom: 16px;
-    width: 260px;
-  }
-
-  @media(max-width: 376px) {
-    width: 200px;
-  }
-
-  @media(max-width: 330px) {
-    width: 160px;
-  }
-
-  &:focus{
-    width: 480px;
-    @media(max-width: 769px) {
-      width: 320px;
-    }
-    @media(max-width: 426px) {
-      width: 300px;
-    }
-    @media(max-width: 376px) {
-      width: 260px;
-    }
-    @media(max-width: 330px) {
-      width: 170px;
-      font-size: 14px;
-    }
-  }
-}
-
-.searchBarButton{
-  border: none;
-  background-color: white;
-  height: 64px;
-  width: 48px;
-  padding: 8px;
-  border-radius: 0px 8px 8px 0px;
-  cursor: pointer;
-  transition: all ease-in-out 0.5s;
-
-  &:hover{
-    background-color: #DFA139;
-  }
-
-}
-
-// .searchResultModal{
-//   width: 480px;
-//   background-color: #ffffff;
-//   border-radius: 0px 0px 8px 8px;
-//   height: fit-content;
-//   margin-left: 16px;
-//   box-shadow: #ede4fd 0px 4px 4px;
-// }
-
-// .searchResult{
-//   background-color: #ffffff;
-//   width: 95%;
-//   padding-left: 24px;
-//   padding-top: 16px;
-//   padding-bottom: 8px;
-//   font-weight: bold;
-//   font-family: 'Rubik';
-//   cursor: pointer;
-//   color:#222222;  
-//   &:hover{
-//     background-color: #dfa239cd;
-//     border-bottom: 1px solid #888888;   
-//   }
-// }
-
-.inputElements{
-  position: relative;
-}
-
-.searchResultModal{
-  width: 480px;
-  background-color: #ffffff;
-  border-radius: 0px 0px 8px 8px;
-  margin-left: 16px;
-  height: fit-content;
-  position: absolute;
-  padding-top: 16px;
-  z-index: 10;
-  top: 60px;  
-}
-
-.closeBtnContainer{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.closeBtn{
-  width: 16px;
-  height: 16px;
-  margin: 8px;
-  cursor: pointer;
-  background-image: url("/closeBtnDark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &:hover{
-    transform: scale(120%);
-  }
-}
-
-.searchResult{
-  cursor: pointer;
-  padding: 8px;
-  p{
-    color:#494949;
-    font-family: 'Rubik';
-    font-size: 16px;
-  }
-  span{
-    font-size: 14px;
-    color: #565656;
-  }
-
-  &:hover{
-    background-color: #e79c1acd;
-    color: #ffffff;
-  }
-
 }

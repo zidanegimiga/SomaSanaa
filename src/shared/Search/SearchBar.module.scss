@@ -1,0 +1,121 @@
+.inputElements {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 32px;
+  background-color: #ffffff;
+  padding: 4px 24px;
+  border-radius: 32px;
+
+  @media(max-width: 426px){
+    border-radius: 16px;
+    width: fit-content;    
+  }
+}
+
+.searchBarInput {
+  border: none;
+  outline: none;
+  background: none;
+  margin-left: 8px;
+  font-family: 'Rubik';
+  font-size: 16px;
+  width: 200px;
+  transition: all ease-in-out 500ms;
+
+  @media(max-width: 769px) {
+    width: 160px;
+  }
+
+  @media(max-width: 426px) {
+    width: 10px;
+    
+    &::placeholder{
+      font-size: 0.1px;
+      color: transparent;
+    }
+
+    &:focus{
+      font-size: 14px;
+      color: #494949;
+
+      &::placeholder{
+        font-size: 10px;
+      }
+    }
+  }
+
+  &:focus {
+    width: 260px;
+
+    @media (max-width: 426px) {
+      width: 240px;      
+    }
+  }
+}
+
+.searchResultModal {
+  border-radius: 16px;
+  width: 320px;
+  height: 70vh;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  position: absolute;
+  left: 5%;
+  z-index: 140;
+  top: 60px;
+  box-shadow: 5px 5px 20px;
+
+  @media(max-width: 426px){
+    width: 300px;    
+  }
+  @media(max-width: 321px){
+    width: 250px;    
+  }
+}
+
+.closeBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeBtn {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-right: 16px;
+  cursor: pointer;
+  background-image: url("/closeBtnDark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    transform: scale(120%);
+  }
+}
+
+.searchResult {
+  cursor: pointer;
+  padding: 8px;
+
+  p {
+    color: #494949;
+    font-family: 'Rubik';
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 14px;
+    color: #565656;
+  }
+
+  &:hover {
+    background-color: #e79c1acd;
+    color: #ffffff;
+  }
+
+}

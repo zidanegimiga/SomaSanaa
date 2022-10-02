@@ -1,5 +1,186 @@
 .lessonsPageContainer{
-    padding-top: 72px;
-    padding-right: 32px;
-    padding-left: 32px;
+  padding-top: 56px;
+}
+
+.lessonsContentContainer {
+  padding-top: 56px;
+  padding-right: 132px;
+  padding-left: 132px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1601px) {
+    padding-right: 64px;
+    padding-left: 64px;   
   }
+
+  @media (max-width: 426px) {
+    padding-right: 16px;    
+    padding-left: 16px;    
+  }
+}
+
+.bodyContainer{
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 426px){
+    flex-direction: column;
+
+  }
+}
+
+.pageBody{
+  width: 50%;
+
+  @media (max-width: 769px){
+    width: 60%;
+  }
+
+  @media (max-width: 426px){
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.playlist{
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  width: 32%;
+  height: 240px;
+  padding: 24px;
+  overflow-y: scroll;
+
+  h3{
+    font-family: Rubik;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 426px){
+    width: 92%;
+    height: fit-content;
+  }
+}
+
+.seriesVideo{
+  display: flex;
+  align-items: center;
+
+  &:hover{
+    background-color: #ffffff;
+  }
+}
+
+.seriesVideoBody{
+  margin-left: 16px;
+  h5{
+    font-family: Rubik;
+    font-weight: bold;
+  }
+
+  p{
+    font-family: Rubik;
+  }
+}
+
+.navigator{
+  background-color: #1e1d1d;
+  display: flex;
+  padding-left: 132px;
+  width: 100vw;
+  z-index: 130;
+  position: fixed;
+
+  span, p{
+    font-family: 'Rubik';
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 8px;
+    text-overflow: clip;
+    cursor: pointer;
+  }
+
+  span{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 1601px) {
+    padding-right: 64px;
+    padding-left: 64px;   
+  }
+
+  @media (max-width: 426px) {
+    padding-left: 16px;        
+  }
+}
+
+.youtubeContainer{
+  width: 100%;
+}
+
+.descriptionContainer{
+  h3{
+    font-size: 24px;
+    font-family: 'Rubik';
+    font-weight: bold;
+  }
+
+  hr{
+    margin-top: 4px;
+    margin-bottom: 16px;
+    height: 2px;
+    background-color: black;
+  }
+
+  h4{
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: 'Rubik';
+    font-weight: bold;
+  }
+
+  p{
+    font-family: 'Rubik';
+    color: #2a2727;
+    margin-top: 12px;
+  }
+}
+
+.suggestedVideosContainer{
+  background-color: #f4f4f4;
+  width: 98%;
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 12px;
+  
+  h3{
+    font-family: Rubik;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  p{
+    font-family: Rubik;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+}
+
+.suggestedVideos{
+  display: flex;
+  overflow-x: scroll;
+  
+  @media (max-width: 426px){
+    flex-direction: column;
+    height: 500px;
+    overflow-y: scroll;
+  }
+}
+
+.suggestedVideo{
+  margin-right: 24px;
+}

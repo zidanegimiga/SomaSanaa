@@ -2,65 +2,24 @@
   overflow: hidden;
   margin-bottom: 24px;
   position: relative;
-  border-radius: 16px;
-  height: 480px;
-
-  @media (max-width: 1407px) {
-    height: 480px;
-  }
-
-  @media (max-width: 1026px) {
-    height: 480px;
-  }
-
-  @media (max-width: 769px) {
-    height: 480px;
-  }
-
-  @media (max-width: 426px) {
-    height: 380px;
-    width: 100%;
-    position: fixed;
-    top: 5%;
-    z-index: 70;
-  }
-
-  @media (max-width: 321px) {
-    height: 380px;
-  }
+  height: 400px;
 
   iframe {
     left: 0px;
     top: 0px;
-    height: 480px;
-    width: 100vw;
+    max-height: 400px;
+    width: 100%;
     position: absolute;
-    border-radius: 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     z-index: 100;
 
-    @media (max-width: 1407px) {
-      height: 480px;
-      width: 100%;       
+    @media (max-width: 351px){
+      max-height: 300px;
     }
+ }
 
-    @media (max-width: 1026px) {
-      height: 480px;
-    }
-
-    @media (max-width: 769px) {
-      height: 480px;
-    }
-
-    @media (max-width: 426px) {
-      height: 380px;
-      width: 100%;
-      position: fixed;
-      top: 5%;
-      z-index: 70;
-    }
-
-    @media (max-width: 321px) {
-      height: 380px;
-    }
+ @media (max-width: 351px){
+  max-height: 300px;
  }
 }
