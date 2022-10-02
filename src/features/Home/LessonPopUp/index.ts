@@ -1,1 +1,1 @@
-export {default} from "./LessonPopUp"
+export {default, ReadMore} from "./LessonPopUp"
