@@ -69,7 +69,7 @@ const SearchBar = ({ payload }) => {
               {searchResults.length > 0 ? (
                 searchResults?.map((result, index) => (
                   <div key={index} className={styles.searchResult}>
-                    <div onClick={()=> {router.push(`/masterclass/${result?.item.id}`); setSearchModal(false); setSearchData(""); }}>
+                    <div onClick={()=> {router.push(`/masterclass/${result?.item.id}`); setSearchModal(false); setSearchData(""); setFocus(false);}}>
                       <p>{result?.item.title}</p>
                       <span>By {result?.item.instructor}</span>
                     </div>

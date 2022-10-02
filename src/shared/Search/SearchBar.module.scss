@@ -20,9 +20,19 @@
   background: none;
   margin-left: 8px;
   font-family: 'Rubik';
-  font-size: 16px;
-  width: 200px;
+  font-size: 24px;
+  width: 300px;
+  z-index: 150;
   transition: all ease-in-out 500ms;
+
+  @media (max-width: 1441px) {
+    font-size: 16px;
+    width: 140px;
+  }
+
+  @media (max-width: 1025px) {
+    width: 100px;    
+  }
 
   @media(max-width: 769px) {
     width: 160px;
@@ -47,7 +57,15 @@
   }
 
   &:focus {
-    width: 260px;
+    width: 540px;
+
+    @media (max-width: 1441px) {
+      width: 300px;    
+    }
+
+    @media (max-width: 1025px) {
+      width: 170px;    
+    }
 
     @media (max-width: 426px) {
       width: 240px;      
@@ -63,8 +81,8 @@
   background-color: #ffffff;
   position: absolute;
   left: 5%;
-  z-index: 140;
-  top: 60px;
+  z-index: 150;
+  top: 48px;
   box-shadow: 5px 5px 20px;
 
   @media(max-width: 426px){
