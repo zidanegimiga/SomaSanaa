@@ -3,7 +3,7 @@ import {useRouter} from "next/router";
 import Head from "next/head";
 import Hero from "features/Home/Hero";
 import Classes from "features/Home/Classes";
-import Nav from "features/Home/Nav";
+import Nav from "shared/Nav";
 import {masterClassesData} from '../../data'
 
 // Modal.setAppElement("#__next");
