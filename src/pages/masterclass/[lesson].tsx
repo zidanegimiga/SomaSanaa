@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Nav from "features/Home/Nav";
+import Nav from "shared/Nav";
 import { ReadMore } from "features/Home/LessonPopUp";
 import YoutubeEmbedder from "features/Home/YoutubeEmbedder";
 import styles from "./lessons.module.scss";
@@ -23,8 +23,7 @@ export default function LessonPage({ lessons }) {
     <div>
       <Head>
         <title>
-          SomaSanaa | Watch a masterclass by {masterclass?.instructor}{" "}
-          explaining {masterclass?.title}
+          {masterclass?.instructor} - {masterclass?.title} 
         </title>
       </Head>
       <Nav payload={payload} />
