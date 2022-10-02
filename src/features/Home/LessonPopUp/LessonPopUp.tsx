@@ -4,7 +4,7 @@ import style from "./LessonPopUp.module.scss";
 import YoutubeEmbedder from "../YoutubeEmbedder";
 
 /** A read more and see less button */
-const ReadMore = ({ children }) => {
+export const ReadMore = ({ children }) => {
   const text = children;
   const [isReadMore, setIsReadMore] = useState(true);
   const toggleReadMore = () => {
