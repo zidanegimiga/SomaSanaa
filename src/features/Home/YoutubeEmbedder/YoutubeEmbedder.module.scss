@@ -2,24 +2,30 @@
   overflow: hidden;
   margin-bottom: 24px;
   position: relative;
-  height: 400px;
+  height: 560px;
+  width: 100%;
 
   iframe {
     left: 0px;
     top: 0px;
-    max-height: 400px;
+    min-height: 560px;
     width: 100%;
     position: absolute;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    z-index: 100;
 
-    @media (max-width: 351px){
-      max-height: 300px;
+    @media (max-width: 426px){
+      height: 240px;
     }
  }
 
- @media (max-width: 351px){
-  max-height: 300px;
+ @media (max-width: 1441px){
+  height: 380px;
+  iframe{
+    min-height: 240px;
+  }
+ }
+ @media (max-width: 426px){
+  height: 240px;
  }
 }

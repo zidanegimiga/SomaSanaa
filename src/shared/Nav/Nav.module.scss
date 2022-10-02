@@ -1,5 +1,4 @@
 .NavContainer {
-  cursor: pointer;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -11,8 +10,8 @@
   position: fixed;
   backdrop-filter: blur(20px);
   z-index: 110;
-  padding-right: 132px;
-  padding-left: 132px;
+  padding-right: 164px;
+  padding-left: 164px;
 
   @media(max-width: 1441px){
     padding-right: 64px;
@@ -47,10 +46,14 @@
 .navRight{
   display: flex;
   justify-content: space-between;
-  margin-right: 184px;
+  margin-right: 356px;
 
   @media (max-width: 1441px) {
     margin-right: 132px;    
+  }
+
+  @media (max-width: 1025px) {
+    margin-right: 56px;    
   }
 
   @media (max-width: 769px) {
@@ -59,13 +62,30 @@
 }
 
 .navItem{
-  margin-left: 24px;
+  margin-left: 48px;
+  cursor: pointer;
+
+  @media (max-width: 1441px) {
+    margin-left: 24px;    
+  }
+
+  @media (max-width: 1025px) {
+    margin-right: 14px;    
+  }
 
   p{
-    font-size: 16px;
+    font-size: 24px;
     font-family: 'Rubik';
     font-weight: 600;
     text-align: left;
+
+    @media (max-width: 1441px) {
+      font-size: 16px;    
+    }
+
+    @media (max-width: 1225px) {
+      font-size: 20px;    
+    }
 
     @media (max-width: 860px) {
       font-size: 10px;      

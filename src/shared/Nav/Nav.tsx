@@ -6,7 +6,8 @@ import style from "./Nav.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
 
-const Nav = ({payload}) => {
+const Nav = (props) => {
+  const {payload} = props
   const [menuOpen, setMenuOpen] = useState(false);
   const handleClick = () => {
     if (!menuOpen) {
@@ -34,7 +35,7 @@ const Nav = ({payload}) => {
       <div className={style.NavContainer}>
         <div className={style.navLeft}>
           <Link href="/">
-            <Image width={184} height={96} src="/logo.png" alt="logo" />
+            <Image width={180} height={90} src="/logo.png" alt="logo" />
           </Link>
         </div>
         <div className={style.navCenter}>
@@ -42,11 +43,7 @@ const Nav = ({payload}) => {
         </div>
         <div className={style.navRight}>
           <div className={style.navItem}>
-            <p>ABOUT US</p>
-            <div className={style.underLine}></div>
-          </div>
-          <div className={style.navItem}>
-            <p>CATEGORIES</p>
+            <Link href="/about"><p>ABOUT US</p></Link>
             <div className={style.underLine}></div>
           </div>
           <div className={style.navItem}>
@@ -61,7 +58,7 @@ const Nav = ({payload}) => {
       {menuOpen && (
         <div className={style.MenuModal}>
           <div className={style.modalNavItem}> Home </div>
-          <div className={style.modalNavItem}> Categories </div>
+          <div className={style.modalNavItem}> About us </div>
           <div className={style.modalNavItem}> Contact Us </div>
         </div>
       )}
