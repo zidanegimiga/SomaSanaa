@@ -9,7 +9,8 @@
     font-family: Rubik;
     color: #707070;
   }
-  @media(max-width: 1441px) {
+
+  @media(max-width: 1601px) {
     padding-right: 72px;
     padding-left: 72px;
     h2{
@@ -55,7 +56,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   
-  @media(max-width: 1441px) {
+  @media(max-width: 1601px) {
     display: grid;
     grid-auto-rows: auto;
     grid-template-rows: 1fr;
