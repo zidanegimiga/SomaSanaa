@@ -10,10 +10,9 @@ const ClassCard = ({data}) => {
     <div className={style.cardContainer}>
       <div className={style.cardHeader}>
         <Link  
-          href={`/?lesson=${data.id}`}
-          as={`/masterclass/${data.id}`}
+          href={`/masterclass/${data.id}`}
         >
-          <Image alt='Thumbnail' src={data.poster === "" ? imgCard : data.poster} width={566} height={271}/>
+          <Image alt='Thumbnail' src={data.poster === "" ? imgCard : data.poster} width={700} height={350}/>
         </Link>
       </div>
       <div className={style.cardDescription}>
