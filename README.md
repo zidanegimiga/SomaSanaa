@@ -69,6 +69,11 @@ For shared components and utilities, they are stored in the ```shared``` folder.
 3. Uses pure functions
 4. Any change is throughly tested and reviewed
 
+## How we're currently managing state
+Currently storing data in a data.js file. It's rendered in the server using getServerSideProps functions and then passed as props throughout the components it's required in.
+
+As the project's complexity grows, we'll transition to redux and fetch most of the data from the backend.
+
 
 ## Learn More
 ### `yarn test`
