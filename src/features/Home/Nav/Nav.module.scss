@@ -4,41 +4,94 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   background-color: #F5ECDA;
+  opacity: 1;
   height: 64px;
   position: fixed;
+  backdrop-filter: blur(20px);
   z-index: 110;
+  padding-right: 132px;
+  padding-left: 132px;
 
-  p{
-    font-size: 32px;
-    margin-left: 40px;
-    font-family: Rubik;
-    color: #141414;
+  @media(max-width: 1441px){
+    padding-right: 64px;
+    padding-left: 64px;        
   }
 
-  @media (max-width: 426px) {
-    p{
-      font-size: 24px;
-      margin-left: 32px;
-    }    
+  @media(max-width: 1441px){
+    padding-right: 32px;
+    padding-left: 32px;        
+  }
+
+  @media(max-width: 426px){
+    padding-right: 16px;
+    padding-left: 0px;        
   }
 }
 
-.navItemCenter{
+.navLeft{
+  cursor: pointer;
+}
+
+.navCenter{
+  width: auto;
+}
+
+.closeBtn{
+  background: url("/closeBtnDark.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.navRight{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 184px;
+
+  @media (max-width: 1441px) {
+    margin-right: 132px;    
+  }
+
+  @media (max-width: 769px) {
+    display: none;    
+  }
+}
+
+.navItem{
+  margin-left: 24px;
+
   p{
-    font-family: Rubik;
     font-size: 16px;
+    font-family: 'Rubik';
+    font-weight: 600;
+    text-align: left;
+
+    @media (max-width: 860px) {
+      font-size: 10px;      
+    }
+  }
+
+  .underLine{
+    height: 6px;
+    width: 0%;
+    background-color: #141414;
+    border-radius: 8px;
+    transition: width ease-in-out 0.5s;
+  }
+
+  &:hover{
+    .underLine{
+      width: 100%;
+    }
+  }
+
+  @media(max-width: 769px){
+    display: none;    
   }
 }
 
-.bottomLine{
-  height: 4px;
-  background-color: #141414;
-  border-radius: 8px;
-}
-
-.hamburger {
+.hamburger{
   width: 80px;
   height: 40px;
   margin-right: 40px;
@@ -52,29 +105,29 @@
 }
 
 .menuBtn{
-  svg{
-    transition: all ease-in-out 0.5s;
-  }
-  &:hover{
-    svg{
-      transform: scale(110%);
-    }
+  display: none;
+
+  @media (max-width: 769px) {
+    display: flex;    
   }
 }
 
 .MenuModal {
-  background-color: #F5ECDA;
+  position: absolute;
+  background-color: #ffffff;
   width: 300px;
   height: 150px;
-  z-index: 20;
+  z-index: 150;
   position: fixed;
-  top: 12%;
-  right: 4%;
+  top: 8%;
+  right: 2%;  
   border-radius: 8px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px;
+  overflow-y: scroll;
+  opacity: 1;
 }
 
-.NavItem{
+.modalNavItem{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
