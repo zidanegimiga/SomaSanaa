@@ -1,11 +1,11 @@
 .lessonsPageContainer{
-  padding-top: 56px;
+  padding-top: 64px;
 }
 
 .lessonsContentContainer {
-  padding-top: 56px;
-  padding-right: 132px;
-  padding-left: 132px;
+  padding-top: 72px;
+  padding-right: 164px;
+  padding-left: 164px;
   display: flex;
   flex-direction: column;
 
@@ -88,8 +88,10 @@
   background-color: #1e1d1d;
   display: flex;
   padding-left: 132px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   width: 100vw;
-  z-index: 130;
+  z-index: 100;
   position: fixed;
 
   span, p{
@@ -108,13 +110,16 @@
     }
   }
 
-  @media (max-width: 1601px) {
-    padding-right: 64px;
-    padding-left: 64px;   
+  @media (max-width: 1441px) {
+    padding-left: 64px;
+    padding-top: 24px;
+    padding-bottom: 24px;  
   }
 
   @media (max-width: 426px) {
-    padding-left: 16px;        
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;        
   }
 }
 
