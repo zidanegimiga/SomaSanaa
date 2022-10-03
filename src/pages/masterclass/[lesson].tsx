@@ -6,7 +6,7 @@ import Image from "next/image";
 import Nav from "shared/Nav";
 import { ReadMore } from "features/Home/LessonPopUp";
 import YoutubeEmbedder from "features/Home/YoutubeEmbedder";
-import styles from "./lessons.module.scss";
+import styles from "../../styles/lessons.module.scss";
 import { masterClassesData } from "../../../data";
 import ClassCard from "features/Home/ClassCard";
 
