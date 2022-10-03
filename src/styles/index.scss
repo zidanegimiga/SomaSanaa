@@ -30,15 +30,15 @@ body{
 
 .Modal{
   position: absolute;
-  top: 80px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
+  top: 8%;
+  left: 196px;
+  right: 196px;
+  bottom: 8%;
   border: none;
   outline: none;
-  border-radius: 16px;
+  border-radius: 4px;
   overflow-y: scroll;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 
   @media (max-width: 1025px) {
     top: 50px;
@@ -70,7 +70,7 @@ body{
   right: 0;
   bottom: 0;
   background-color: rgba(50, 50, 50, 0.922);
-  z-index: 50;
+  z-index: 250;
 }
 
 

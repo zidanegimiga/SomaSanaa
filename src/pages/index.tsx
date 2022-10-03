@@ -27,14 +27,6 @@ export default function Index({ payload, id }) {
         <Classes data={payload} categoryTitle="Music" category="music"/>
         <Classes data={payload} categoryTitle="Non-fungible Tokens" category="nft"/>
       </Suspense>
-      {/* <Modal
-        className="Modal"
-        overlayClassName="Overlay"
-        isOpen={!!router.query.lesson} 
-        onRequestClose={() => router.back()}
-      >
-        <LessonPopUp payload={payload} id={router.query.lesson}/>
-      </Modal> */}
     </>
   );
 }
