@@ -4,7 +4,7 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <>
-      <div className={styles.footerWrapper}>
+      <div className={styles.footerWrapper} id="contact">
         <div className={styles.contacts}>
           <h4>Contact details</h4>
           <div className={styles.horizontalLine}></div>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -47,7 +48,7 @@ const Nav = (props) => {
             <div className={style.underLine}></div>
           </div>
           <div className={style.navItem}>
-            <p>CONTACT US</p>
+            <a href="/#contact">CONTACT US</a>
             <div className={style.underLine}></div>
           </div>
         </div>
