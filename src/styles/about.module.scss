@@ -8,7 +8,6 @@
         font-size: 40px;
         font-family: Rubik;
         text-align: center;
-        text-decoration: underline;
     }
 }
 
@@ -20,12 +19,13 @@
 
 .videoBtnsectionLeft{
     min-height: 200px;
-    min-width: 50%;
+    min-width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 64px;
-    background-color: #fefbf8;
+    background-color: #262524;
+    border-radius: 8px;
     
 }
 
@@ -101,7 +101,7 @@
         font-size: 16px;
         font-family: Rubik;
         font-weight: 400;
-        width: 380px;
+        width: 400px;
     }
 }
 
@@ -140,11 +140,15 @@
     text-align: center;
     padding-left: 132px;
     padding-right: 132px;
+    padding-top: 48px;
+    padding-bottom: 56px;
     font-family: Rubik;
+    background-color: #fefbf8;    
 
     p {
         font-size: 24px;
         font-weight: 200;
+        line-height: 30px;
     }
 
     span{

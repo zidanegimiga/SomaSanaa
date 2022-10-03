@@ -22,7 +22,8 @@ const About: FC = () => {
       <Nav payload={masterClassesData} />
       <div className={styles.pageContainer}>
         <div className={styles.contentContainer}>
-          <h1>About Us</h1>
+          <h1>ABOUT US</h1>
+          <hr/>
           <div className={styles.videoBtnsection}>
             <div className={styles.videoBtnsectionLeft}>
               <div className={styles.videoBtnContainer}>
@@ -37,7 +38,7 @@ const About: FC = () => {
                 <div className={styles.horizontalLine}></div>
                 <p>Watch video</p>
               </div>
-              <p>Our masterclasses cover many creative skillsets instructed by experienced professionals, making it easy for you to upskill yourself to a consistently high standard, and gain the with motivation and resilience you need to succeed.</p>
+              <p>Our masterclasses cover many creative skillsets instructed by experienced professionals, making it easy for you to upskill yourself to a high standard, and gain the with motivation and resilience you need to succeed.</p>
               <button className={styles.exploreBtn}>Explore our catalogue</button>
             </div>
           </div>
