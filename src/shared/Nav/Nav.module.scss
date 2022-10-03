@@ -73,11 +73,13 @@
     margin-right: 14px;    
   }
 
-  p{
+  p, a{
     font-size: 24px;
     font-family: 'Rubik';
     font-weight: 600;
     text-align: left;
+    text-decoration: none;
+    color: black;
 
     @media (max-width: 1441px) {
       font-size: 16px;    
