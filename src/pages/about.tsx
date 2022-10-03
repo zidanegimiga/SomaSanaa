@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import Nav from "shared/Nav";
 import Modal from "react-modal";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import { masterClassesData } from "../../data";
 import styles from "../styles/about.module.scss";
 import Button from "shared/Button";
@@ -39,7 +40,7 @@ const About: FC = () => {
                 <p>Watch video</p>
               </div>
               <p>Our masterclasses cover many creative skillsets instructed by experienced professionals, making it easy for you to upskill yourself to a high standard, and gain the with motivation and resilience you need to succeed.</p>
-              <button className={styles.exploreBtn}>Explore our catalogue</button>
+              <button className={styles.exploreBtn}><Link href="/">Explore our catalogue</Link></button>
             </div>
           </div>
           <div className={styles.descriptionContainer}>
