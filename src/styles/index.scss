@@ -30,11 +30,11 @@ body{
 
 .Modal{
   position: absolute;
-  top: 20%;
-  bottom: 20%;
-  right: 25%;
-  left: 25%;
-  width: 1245px;
+  top: 10%;
+  bottom: 25%;
+  right: 50%;
+  left: 30%;
+  width: 1080px;
   height: auto;
   border: none;
   outline: none;
@@ -43,10 +43,10 @@ body{
   background-color: #ffffff;
 
   @media (max-width: 1441px) {
-    width: 1080px;
-    left: 15%;
+    width: 840px;
+    left: 20%;
     right: 50%;
-    height: 600px;
+    height: 480px;
   }
 
   @media (max-width: 1025px) {
