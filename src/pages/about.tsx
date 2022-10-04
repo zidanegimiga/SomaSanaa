@@ -38,7 +38,7 @@ const About: FC = () => {
             <div className={styles.videoBtnsectionRight}>
               <div className={styles.watchVideo}>
                 <div className={styles.horizontalLine}></div>
-                <p>Watch video</p>
+                <span>Watch video</span>
               </div>
               <p>Our masterclasses cover many creative skillsets instructed by experienced professionals, making it easy for you to upskill yourself to a high standard, and gain the with motivation and resilience you need to succeed.</p>
               <Link href="/"><button className={styles.exploreBtn}>Explore our catalogue</button></Link>
