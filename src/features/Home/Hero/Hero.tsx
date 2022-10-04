@@ -22,20 +22,20 @@ const Hero = ({payload}) => {
   return (
     <>
       <div className={styles.heroContainer}>
-        <div className={styles.titleContainer}>
-          <h1 className={styles.title}>
-            Online <br /> Masterclasses <br /> for All <span>Creatives</span>
-          </h1>
-          <div className={styles.line}></div>
-        </div>
-        <div className={styles.subTitle}>
-          SomaSanaa has a wide array of masterclasses from a selection of diverse and accomplished creatives. Elevate yourself with one of these videos.
-        </div>
-        <div className={styles.buttonsContainer}>
-          <Button text="SURPRISE ME!" action={randomVideo} />
-          <div className={styles.searchBar}>            
+          <div className={styles.titleContainer}>
+            <h1 className={styles.title}>
+              Online <br /> Masterclasses <br /> for All <span>Creatives</span>
+            </h1>
+            <div className={styles.line}></div>
           </div>
-        </div>
+          <div className={styles.subTitle}>
+            SomaSanaa has a wide array of masterclasses from a selection of diverse and accomplished creatives. Elevate yourself with one of these videos.
+          </div>
+          <div className={styles.buttonsContainer}>
+            <Button text="SURPRISE ME!" action={randomVideo} />
+            <div className={styles.searchBar}>            
+            </div>
+          </div>
       </div>
     </>
   );

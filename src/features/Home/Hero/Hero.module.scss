@@ -1,38 +1,58 @@
-.heroContainer{
-  background-image: url('/Hero-Image.png');
-  background-repeat: no-repeat;
+@keyframes hero {
+  0% {
+    background-image: url('/cameraHero.png');
+  }
+
+  50% {
+    background-image: url('/writerHero.png');
+  }
+
+  100% {
+    background-image: url('/fashion.png');
+  }
+}
+
+.heroContainer {
   background-color: #F5ECDA;
+  animation-name: hero;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  // animation-fill-mode: forwards;
+  background-image: url('/fashion.png');
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
   padding-top: 164px;
   padding-left: 164px;
   padding-right: 164px;
   padding-bottom: 40px;
-  
+
   @media(max-width: 1441px) {
     padding-top: 80px;
     padding-left: 64px;
     padding-right: 64px;
-    padding-bottom: 40px;   
+    padding-bottom: 40px;
   }
-  
+
   @media(max-width: 769px) {
     padding-top: 80px;
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 40px;   
+    padding-bottom: 40px;
   }
-  
+
   @media(max-width: 426px) {
     padding-top: 80px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 40px;   
+    padding-bottom: 40px;
   }
 }
 
-.titleContainer{
+.titleContainer {
   position: relative;
 }
 
@@ -41,7 +61,7 @@
   font-size: 56px;
   color: #494949;
 
-  span{
+  span {
     border-bottom: 8px solid #DFA139;
     border-radius: 8px;
   }
@@ -53,17 +73,17 @@
   @media(max-width: 426px) {
     font-size: 40px;
     line-height: 48px;
-    color:#242222;
+    color: #242222;
   }
 
   @media(max-width: 376px) {
     font-size: 32px;
     line-height: 40px;
-    color:#242222;
-  } 
+    color: #242222;
+  }
 }
 
-.subTitle{
+.subTitle {
   font-family: "Rubik";
   color: #494949;
   font-size: 24px;
@@ -77,22 +97,26 @@
     width: 50%;
     line-height: 32px;
   }
+
   @media(max-width: 426px) {
     font-size: 20px;
     width: 80%;
     line-height: 28px;
-    color:rgb(52, 49, 49);
+    color: rgb(52, 49, 49);
   }
+
   @media(max-width: 330px) {
     font-size: 16px;
-    line-height: 24px;;
+    line-height: 24px;
+    ;
   }
 
 }
 
-.buttonsContainer{
+.buttonsContainer {
   display: flex;
   margin-top: 32px;
+
   @media(max-width: 426px) {
     flex-direction: column-reverse;
   }
