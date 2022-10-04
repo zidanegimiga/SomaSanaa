@@ -58,9 +58,9 @@ const Nav = (props) => {
       </div>
       {menuOpen && (
         <div className={style.MenuModal}>
-          <div className={style.modalNavItem}> Home </div>
-          <div className={style.modalNavItem}> About us </div>
-          <div className={style.modalNavItem}> Contact Us </div>
+          <Link href="/"><div className={style.modalNavItem}>Home</div></Link>
+          <Link href="/about"><div className={style.modalNavItem}> About us</div></Link>
+          <Link href="/about/#contact"><div className={style.modalNavItem}>Contact us</div></Link>
         </div>
       )}
     </>
