@@ -25,7 +25,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:description"
-            content="Somasanaa is a platform that allows creatives to access digital masterclasses and uskill themselves"
+            content="Somasanaa is a platform that allows creatives to access digital masterclasses and upskill themselves"
             key="og-description"
           />
           <link rel="icon" href="/logo.png" />
