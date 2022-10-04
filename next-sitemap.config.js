@@ -1,11 +1,11 @@
-const siteUrl = "https://www.somasanaa.com";
+const siteURL = "https://www.somasanaa.com";
 
 module.exports = {
   siteUrl,
   generateRobotTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: "*", allow: "/" }],
-    additionalSiteMaps: [`${siteUrl}/server-sitemap.xml`],
+    additionalSiteMaps: [`${siteURL}/server-sitemap.xml`],
   },
   exclude: [""],
 };

@@ -4,8 +4,8 @@ import { getServerSideSitemap, ISitemapField } from "next-sitemap";
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const data: any[] = masterClassesData;
-  const fields: ISitemapField[] = data.map((masterclass) => ({
-    loc: `https:www.somasanaa.com/masterclass/${masterclass.id}`,
+  const fields: ISitemapField[] = data.map((lesson) => ({
+    loc: `https:www.somasanaa.com/masterclass/${lesson.id}`,
     lastmod: new Date().toISOString(),
   }));
   return getServerSideSitemap(ctx, fields);
