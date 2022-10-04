@@ -1,7 +1,7 @@
 const siteURL = "https://www.somasanaa.com";
 
 module.exports = {
-  siteUrl,
+  siteURl,
   generateRobotTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: "*", allow: "/" }],
