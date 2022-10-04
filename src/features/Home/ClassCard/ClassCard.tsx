@@ -18,7 +18,7 @@ const ClassCard = ({data}) => {
       <div className={style.cardDescription}>
         <Link 
           href={`/?lesson=${data.id}`}
-          as={`/masterclass/${data.id}`}>
+        >
           <h4>{data?.title}</h4>
         </Link>
         <h5>{data?.instructor}</h5>
