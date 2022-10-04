@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
@@ -37,8 +38,8 @@ const Footer = () => {
           <h4>Social Media</h4>
           <div className={styles.horizontalLine}></div>
           <div className={styles.smIconsGroup}>
+            <Link href="https://www.instagram.com/creativesgarage/"><div className={styles.instagram}></div></Link>
             <div className={styles.facebook}></div>
-            <div className={styles.instagram}></div>
             <div className={styles.whatsapp}></div>
           </div>
         </div>
