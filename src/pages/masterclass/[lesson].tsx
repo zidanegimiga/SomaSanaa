@@ -48,7 +48,7 @@ export default function LessonPage({ lessons }) {
                 <ReadMore>{masterclass?.description}</ReadMore>
               </div>
             </div>            
-            <div className={styles.playlist}>
+            {/* <div className={styles.playlist}>
               <h3>More from this series</h3>
               <div className={styles.seriesVideos}>
                 <div className={styles.seriesVideo}>
@@ -79,7 +79,7 @@ export default function LessonPage({ lessons }) {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className={styles.suggestedVideosContainer}>
             <h3> Suggested videos</h3>
