@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="robots" content="all" />
+          {/* <meta name="robots" content="all" />
           <meta name="googlebot" content="index,follow" />
           <meta property="og:type" content="website" key="og-type" />
           <meta
@@ -22,7 +22,7 @@ class MyDocument extends Document {
             property="og:title"
             content="SomaSanaa"
             key="og-title"
-          />
+          /> */}
           <link rel="icon" href="/logo.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
@@ -31,7 +31,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <div id="modal-root"></div>
         </body>
       </Html>
     );
