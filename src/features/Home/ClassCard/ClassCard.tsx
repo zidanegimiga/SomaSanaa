@@ -22,6 +22,7 @@ const ClassCard = ({data}) => {
           <h4>{data?.title}</h4>
         </Link>
         <h5>{data?.instructor}</h5>
+        <p>Category: {data?.category}</p>
         <p>{useTruncate(data?.description, 120)}</p>
       </div>
     </div>
