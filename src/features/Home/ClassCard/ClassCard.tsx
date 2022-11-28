@@ -17,11 +17,12 @@ const ClassCard = ({data}) => {
       </div>
       <div className={style.cardDescription}>
         <Link 
-          href={`/?lesson=${data.id}`}
-          as={`/masterclass/${data.id}`}>
+          href={`/masterclass/${data.id}`}
+        >
           <h4>{data?.title}</h4>
         </Link>
         <h5>{data?.instructor}</h5>
+        <p>Category: {data?.category}</p>
         <p>{useTruncate(data?.description, 120)}</p>
       </div>
     </div>
