@@ -19,7 +19,7 @@ export default function Index({ payload, id }) {
         <Classes data={payload} categoryTitle="Organisation" category="organisation"/>
         <Classes data={payload} categoryTitle="Video Production" category="video-production"/>
         <Classes data={payload} categoryTitle="Music" category="music"/>
-        <Classes data={payload} categoryTitle="Non-fungible Tokens" category="nft"/>
+        <Classes data={payload} categoryTitle="Digital Art" category="digital-art"/>
       </Suspense>
       <Footer />
     </>

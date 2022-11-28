@@ -77,7 +77,7 @@ export const masterClassesData = [
         description: "Welcome to the world of NFT (Non Fungible Tokens) which is taking the creative economy by storm. In this Masterclass, Paola Mellissa, a renowned NFT enthusiast who has mastered the art of creating NFTs, takes you through the introduction of NFTs and its uptake in Kenya. She highlights on how important the NFT growth is important in the creative economy while giving you hints on how to create them.",
         youtubeEmbedID: "AuwYGk6Jqbw",
         poster: "/nfts.png",
-        category: "nft"        
+        category: "digital-art"        
     },
     {
         id: "xax6dJ6eWNE",
@@ -159,5 +159,68 @@ export const masterClassesData = [
         youtubeEmbedID: "0_Awn46Ad1g",
         poster: "/gigEconomy.png",
         category: "organisation"        
+    },
+    {
+        id: "HaDO6ySV7rc",
+        title: "How to make VR projects",
+        instructor: "Ingrid Klopp, Darren Emmerson , Dylan and Yasmin Elliot",
+        description: "The masterclass is a unique one offered by four panelists talking about the various aspects of Virtual Reality projects. The panelist are Ingrid Klopp from Electric south based in Cape town South Africa, Darren Emmerson from the UK who works in VR and Augmented Reality, Dylan based in South Africa and is a documentary film maker and a lecturer at the university of Cape town and Yasmin Elliot an immersive content production director and a co-founder of a company called Bokker based in New York. The panelist takes you through a nearly one hour long of sharing of concepts and ideas on the Virtual reality technology that includes the gadgets and to the production concepts.",
+        youtubeEmbedID: "HaDO6ySV7rc",
+        poster: "/vrProjects.png",
+        category: "digital-art"        
+    },
+    {
+        id: "1YB3-jztJ1M",
+        title: "MARKETING AND BRANDING A BAND",
+        instructor: "Kenn Njoroge",
+        description: "Kenn Njoroge AKA Biggie is a band manager at Shamsi Music and plays drum. He is in charge of branding and marketing the band with an experience of over 8 years. In this part of the masterclass he shares the Shamsi success in branding and marketing that has made the band scale the far they reached.",
+        youtubeEmbedID: "1YB3-jztJ1M",
+        poster: "/marketingABrand.png",
+        category: "organisation"        
+    },
+    {
+        id: "mqQrpFyijJY",
+        title: "Starting and naming a band",
+        instructor: "Samuel Waithaka",
+        description: "Samuel Waithaka Nyaga AKA Laka is a saxophonist at Shamsi music. Just as  most other people in bands Laka started his music career in a church band. He has been with Shamsi band for twenty years. In this masterclass Laka takes you through how to start a band and naming a band.",
+        youtubeEmbedID: "mqQrpFyijJY",
+        poster: "/makingABand.png",
+        category: "organisation"        
+    },
+    {
+        id: "mqQrpFyijJY",
+        title: "Location Scouting",
+        instructor: "MATRID NYAGA",
+        description: "In film production, location scouting is finding places to shoot commercials, television shows, or movies. In this master class Matrid Nyaga goes through best practices when searching for interior or exterior venues to serve as the setting for scenes depicted in a script.",
+        youtubeEmbedID: "mqQrpFyijJY",
+        poster: "/locationScouting.png",
+        category: "video-production"        
+    },
+    {
+        id: "0iWCW6XELdk",
+        title: "Directing",
+        instructor: "Alan Oyugi",
+        description: "Alan Oyugi is a Kenyan film actor and director who has worked on several projects mainly in the are of local TV dramas and soap operas and comedies such as Jane and Abel which was aired on Maisha Magic, Mama Digital and Mjinga na Mshenzi a kiswahili comedy both for Ebru Tv. He has also produced and directed several documentaries on environmental issues, an area he is very passionate about. He released the film Plastics are For ever just as Kenya was implementing a ban on single use plastic. They have shown this film around the world as a showcase of what efforts are being made to eradicate ocean plastic on the east African coast. He is a father of two adult children",
+        youtubeEmbedID: "0iWCW6XELdk",
+        poster: "/directing.png",
+        category: "video-production"        
+    },
+    {
+        id: "pxmP_Q3HQnY",
+        title: "Directing",
+        instructor: "Robert Munuku",
+        description: "In this masterclass Robert Munuku who is a visual artists, filmmaker and writer, takes you through writing for film or creative writing for film looking at important aspects in the writing for film. He talks about how to develop a story idea to come up with something that is original, the storytelling process, story boarding and genres in storytelling for film and screen plays.",
+        youtubeEmbedID: "pxmP_Q3HQnY",
+        poster: "/independentFilmMaking.png",
+        category: "video-production"        
+    },
+    {
+        id: "lWpg87cHWW4",
+        title: "Directing",
+        instructor: "Shishi",
+        description: "Shishi is a prolific vibe curator in the Nairobi scene, setting fire across many dance floors and stages alike. Never remaining predictable, you can find her playing anything from R&B/Soul to Afro beats, Electro-Funk to Future Beats, Afro House to Hip-Hop, Reggaeton to Dancehall, but most importantly known for pioneering Kenyan talent across the globe. She has opened for Burna Boy, IAMDDB, Karun, Tay Iwar, among others and performed at major events such as Africa Nouveau Festival, Kilifi New Year Festival and The Nest Collectives 'Strictly Silk' all more than twice! In this class, Shishi talks about her DJ process before the pre, during and post-performance. This includes but isn't limited to topics such as playlisting, reading a crowd, show flow and DJ styles. Further, she dives into her journey to becoming one of the top female DJs in East Africa. Its a practical and engaging session with demonstrations where needed, keeping it lively and fun",
+        youtubeEmbedID: "lWpg87cHWW4",
+        poster: "/badDj.png",
+        category: "music"        
     },
 ]
