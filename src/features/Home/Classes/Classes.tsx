@@ -11,6 +11,7 @@ interface payLoadProps {
   youtubeEmbedID: string;
   poster: string;
   category: string;
+  new?: boolean;
 }
 
 interface classesProps {
@@ -35,6 +36,10 @@ const Classes = ({ data, category, categoryTitle }: classesProps) => {
   const payload = data.filter((entry) => {
     return entry.category === category;
   });
+
+  const newVideos = data.filter((entry) => {
+    return entry.new === true;
+  })
 
   if (category) {
     return (
@@ -66,7 +71,7 @@ const Classes = ({ data, category, categoryTitle }: classesProps) => {
         <h2>{categoryTitle}</h2>
         <div className={style.horizontalLine}></div>
         <div className={style.ClassesContainer}>
-          {data?.slice(0, next)?.map((lesson, index) => (
+          {newVideos?.slice(0, next)?.map((lesson, index) => (
             <div key={index}>
               <ClassCard data={lesson} />
             </div>

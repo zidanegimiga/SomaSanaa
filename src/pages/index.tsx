@@ -17,7 +17,7 @@ export default function Index({ payload, id }) {
       <Hero payload={payload}/>
       <Suspense>
         <div className={styles.classesWrapper}>
-          <Classes data={payload} categoryTitle="Recently Added"/>
+          <Classes data={payload} categoryTitle="Recently Added" />
           <Classes data={payload} categoryTitle="Organisation" category="organisation"/>
           <Classes data={payload} categoryTitle="Video Production" category="video-production"/>
           <Classes data={payload} categoryTitle="Music" category="music"/>
