@@ -17,6 +17,16 @@ function uniqueid() {
 
 export const masterClassesData = [
     {
+        id: "Rx5uqc0XoiA",
+        title: "BEADWORK",
+        instructor: "Agnes Maina",
+        description: "Agnes Maina is a seasoned bead worker who has mastered the art of beadwork over the years. She has transcended from the traditional beads to the current beads and still holds on to the value of traditional beads that were used in trade to create masterpieces sold locally and internationally. In this Masterclass  Agnes takes you through the different styles of creating jewellery and the different materials used in creating jewellery.",
+        youtubeEmbedID: "Rx5uqc0XoiA",
+        poster: "/agnesMaina.png",
+        category: "organisation",
+        new: true
+    },
+    {
         id: "S17BFdmKNAY",
         title: "FINDING YOUR MUSE",
         instructor: "MAGGIE OTIENO",
