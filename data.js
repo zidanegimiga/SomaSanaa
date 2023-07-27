@@ -1,21 +1,51 @@
 /**
  * returns a unique id of type string
  */
-function uniqueid(){
-    var idstr = String.fromCharCode(Math.floor((Math.random()*25)+65));
-    do {                
+function uniqueid() {
+    var idstr = String.fromCharCode(Math.floor((Math.random() * 25) + 65));
+    do {
         // between numbers and characters (48 is 0 and 90 is Z (42-48 = 90)
-        var ascicode=Math.floor((Math.random()*42)+48);
-        if (ascicode<58 || ascicode>64){
+        var ascicode = Math.floor((Math.random() * 42) + 48);
+        if (ascicode < 58 || ascicode > 64) {
             // exclude all chars between : (58) and @ (64)
-            idstr+=String.fromCharCode(ascicode);    
-        }                
-    } while (idstr.length<32);
+            idstr += String.fromCharCode(ascicode);
+        }
+    } while (idstr.length < 32);
 
     return (idstr);
 }
 
 export const masterClassesData = [
+    {
+        id: "S17BFdmKNAY",
+        title: "FINDING YOUR MUSE",
+        instructor: "MAGGIE OTIENO",
+        description: "Maggie Otieno is an amazing sculptor who makes sculptures from mostly wood and metal parts. She believes that the wood she uses, which are over 100 years old and were used in the meter gauge railway, are grained with stories of the travelers.  In this masterclass Maggie Otieno takes you through a masterclass on finding your muse to unleashing your creative inspiration for your masterpieces. She delves on the following key components; How do you define a muse and draw inspiration to it? How can you translate your inspiration to art?  What are the measures to take when you think you are losing your muse?",
+        youtubeEmbedID: "S17BFdmKNAY",
+        poster: "/maggieOtieno.png",
+        category: "organisation",
+        new: true
+    },
+    {
+        id: "L95EX4M8pBE",
+        title: "Voice over acting.",
+        instructor: "Keith Kihiu",
+        description: "Keith Kihiu is a voice artist who has mastered the art over the years with works done with Buni media among others. In this masterclass, Keith Kihiu takes you through voice-over acting giving insights on the do's and don'ts while giving you tips on being the best Voice-Over artist in the country. Did you know that Voice artists use their vocal abilities to record audio for different purposes across many industries? I thought you should know.",
+        youtubeEmbedID: "L95EX4M8pBE",
+        poster: "/keithKihiu.png",
+        category: "organisation",
+        new: true
+    },
+    {
+        id: "fGxN_rhZS1Q",
+        title: "The Litungu",
+        instructor: "Peter Lusweti Wamalwa",
+        description: "Peter Lusweti Wamalwa is a renowned musician and musical instrument trainer. He has mastered the art of training people who would like to learn the skills of how to play some traditional musical instruments. He is also a traditional musician who has performed on gigs at the Bomas of Kenya and other places. In this Master Minds, he takes you through the Litungu a musical instrument that originates with the Luhya community. The Litungu is a traditional lyre played by the Luhya community The instrument was originally played by only men among the bukusu and it accompanies  most of ceremonial dances of the Bukusu.",
+        youtubeEmbedID: "fGxN_rhZS1Q",
+        poster: "/theLitungu.png",
+        category: "music",
+        new: true
+    },
     {
         id: "Teej3RpiiXc",
         title: "Safe Spaces for Vulnerability and Conversation, Curating an intimate & unique networking experience and Reverse Brainstorming",
@@ -23,7 +53,7 @@ export const masterClassesData = [
         description: "In this Masterclass Jonas Nyacomba and Lindsay Obath who are founders of free mind session will take you through various topics that include genesis of free Mind Sessions, how to take the first step in curating a session and breaking down the walls we put ourselves in as humans.",
         youtubeEmbedID: "Teej3RpiiXc",
         poster: "/safeSpaces.png",
-        category: "organisation",        
+        category: "organisation",
     },
     {
         id: "HfgwJQD7tAk",
@@ -31,8 +61,8 @@ export const masterClassesData = [
         instructor: "Lindsay Obath",
         description: "In this masterclass Lindsay Obath takes you through body art while focusing on, hygiene and preserving products, navigating different skin tones, highlighting natural features, creating illusions, colour choices and line work.",
         youtubeEmbedID: "HfgwJQD7tAk",
-        poster: "/bodyArt.png" ,
-        category: ""       
+        poster: "/bodyArt.png",
+        category: ""
     },
     {
         id: "bvf9Rf6XAt0",
@@ -41,7 +71,7 @@ export const masterClassesData = [
         description: "In this Episode of the Masterminds Ochieng Oneko takes you through an introductory lesson in directing film by Kenyan film maker. Ochieng is a filmmaker who trained in EICAR, the international film school in Paris, during which he worked on about 3 to 4 dozen sets in various positions: Writer, Director, 1st Assistant Director, 2nd Assistant Director, Grip, Electric, Editor, etc.",
         youtubeEmbedID: "bvf9Rf6XAt0",
         poster: "/filmDirecting.png",
-        category: "video-production"        
+        category: "video-production"
     },
     {
         id: "srJ06K-m6d8",
@@ -59,7 +89,7 @@ export const masterClassesData = [
         description: "Mohammed Ayieko is a Kenyan cinema director, whose creative agency lies in Pedagogy Drawing in his personal experiences to promote inclusive and diverse narratives. In this masterclass Ayieko takes you through the aspects of colour pelleting for a set and how best to match different outfits in a film production of or a picture shoot.",
         youtubeEmbedID: "1rT6x7CTKXU",
         poster: "/colorPalettes.png",
-        category: ""        
+        category: ""
     },
     {
         id: "5Hsjk1w3YgI",
@@ -68,7 +98,7 @@ export const masterClassesData = [
         description: " Abigael Arunga is a writer and editor in the Kenyan and East Africa region for the past decade, and more recently, she has transitioned to a more global outlook and reach in writing with organizations such as INEND, Girls Globe, and the bill and Melinda gates Foundation. In this masterclass she takes the creatives into the basics of a good writer.",
         youtubeEmbedID: "5Hsjk1w3YgI",
         poster: "/writing.png",
-        category: ""        
+        category: ""
     },
     {
         id: "AuwYGk6Jqbw",
@@ -77,7 +107,7 @@ export const masterClassesData = [
         description: "Welcome to the world of NFT (Non Fungible Tokens) which is taking the creative economy by storm. In this Masterclass, Paola Mellissa, a renowned NFT enthusiast who has mastered the art of creating NFTs, takes you through the introduction of NFTs and its uptake in Kenya. She highlights on how important the NFT growth is important in the creative economy while giving you hints on how to create them.",
         youtubeEmbedID: "AuwYGk6Jqbw",
         poster: "/nfts.png",
-        category: "digital-art"        
+        category: "digital-art"
     },
     {
         id: "xax6dJ6eWNE",
@@ -86,7 +116,7 @@ export const masterClassesData = [
         description: "Joe Peppih Kiragu has experience of over 15 years in photography and video. Joe in this masterclass introduces fundamental principles in professional photography. He also takes you through components of photography that are not directed to photography but are a note to everyone who wants to become a photographer. The topics he covers are understanding the human perception of vision, understanding light, camera basics and techniques to shape perception.",
         youtubeEmbedID: "xax6dJ6eWNE",
         poster: "/photography.png",
-        category: ""        
+        category: ""
     },
     {
         id: "CV2MKE_jVX4",
@@ -95,7 +125,7 @@ export const masterClassesData = [
         description: "Edu Ooro is the Creatives Programs Manager and head choreographer at e Sarakasi Dome. Edwin “Edu'' to take dance lessons from a background of a parent who did not want him to pursue his dreams of becoming a dancer. He currently leaves and eats from the dance choreographies that he does and trains at the Sarakasi Dome. In this Master Mind, he takes you through the fundamentals to achieving the best in the dance profession.",
         youtubeEmbedID: "CV2MKE_jVX4",
         poster: "/thrivingInDance.png",
-        category: "music"        
+        category: "music"
     },
     {
         id: "yM7mGhGbw04",
@@ -104,7 +134,7 @@ export const masterClassesData = [
         description: "Kevin describes himself as a storyteller.  He loves words and sounds and creating images in people’s minds. He is also a writer, a journalist and a podcaster.  For Kevin, podcasting is a way of bringing the love for words and sound together. Hence, Nipe Story. A storytelling podcast that features fictional short stories from Africa. During his session, Kevin will talk about his journey into podcasting, share tips on how to start a podcast and the lessons and challenges that he has gone through over the last three years.",
         youtubeEmbedID: "yM7mGhGbw04",
         poster: "/podcasting.png",
-        category: "video-production"        
+        category: "video-production"
     },
     {
         id: "1zkyvOjoPmg",
@@ -113,7 +143,7 @@ export const masterClassesData = [
         description: "Casting is one of the most fundamental parts of film production. A film that has mis-cast roles would often be doomed from before filming even begins. During casting, the casting director looks to fill the roles for characters in the script with actors based on how they fit the description of the character being cast; the look, personality, believability, likeability and the actors talent. Teaching the casting Master Class is Lorella Jowi, an East Africa based filmmaker, producer, casting director and voiceover artist. Based in Nairobi, work has taken her to Ethiopia, Rwanda, Uganda, Malawi, South Africa, France and Germany. ‘The Sea Turtles of Lamu’ (2015) ,a documentary produced by LoJ, was awarded at the Wildlife Conservation Film Festival.",
         youtubeEmbedID: "1zkyvOjoPmg",
         poster: "/casting.png",
-        category: "video-production"        
+        category: "video-production"
     },
     {
         id: "lCIUQFzarnw",
@@ -122,7 +152,7 @@ export const masterClassesData = [
         description: "In this masterclass Antonia Kihara who is a consultant takes you through understanding the basics in brand strategy. Brand Strategy is a long term plan to achieve a series of long term goals that ultimately result in the identification and preference of your brand to the consumers. A brand strategy helps you cultivate a strong business brand and helps define who you are and helps to focus your long term goals.",
         youtubeEmbedID: "lCIUQFzarnw",
         poster: "/brandStrategy.png",
-        category: "organisation"        
+        category: "organisation"
     },
     {
         id: "CTP1hVwSE6U",
@@ -131,7 +161,7 @@ export const masterClassesData = [
         description: "Ronjey is a drummer who takes us through his career in the music and education industries. He shares insights on how to maintain the traditional African drums.",
         youtubeEmbedID: "CTP1hVwSE6U",
         poster: "/drumming.png",
-        category: "music"        
+        category: "music"
     },
     {
         id: "BuR6MqWJAag",
@@ -140,7 +170,7 @@ export const masterClassesData = [
         description: "Makadem is a prolific musician who has over the years mastered the art of playing the traditional Luo Nyatiti. In this Music Master he takes you through his instrument’s features, how to build and maintained it with brief insights on how to play one.",
         youtubeEmbedID: "BuR6MqWJAag",
         poster: "/musicMaster.png",
-        category: "music"        
+        category: "music"
     },
     {
         id: "inf73acocgs",
@@ -149,7 +179,7 @@ export const masterClassesData = [
         description: "Tom Shea is an amateur custom lighting engineering enthusiast, computer geek and hacker who happens to have been lucky enough to build large-scale stages and installations at a multitude of festivals and events across three different continents. He learned almost everything he knows from Googling stuff and then trying it. ",
         youtubeEmbedID: "inf73acocgs",
         poster: "/ledLighting.png",
-        category: "video-production"        
+        category: "video-production"
     },
     {
         id: "0_Awn46Ad1g",
@@ -158,7 +188,7 @@ export const masterClassesData = [
         description: "Kip Ketter is a creative producer who has scaled the heights in the creative sector through pushing onto his dreams. He studied in South Africa and after coming back to Kenya he has grown to be a strategist, a brand developer and a creative content producer. In this masterclass Kip Ketter takes you through the dynamics of the gig economy and networking within it.",
         youtubeEmbedID: "0_Awn46Ad1g",
         poster: "/gigEconomy.png",
-        category: "organisation",       
+        category: "organisation",
     },
     {
         id: "HaDO6ySV7rc",
@@ -168,7 +198,7 @@ export const masterClassesData = [
         youtubeEmbedID: "HaDO6ySV7rc",
         poster: "/vrProjects.png",
         category: "digital-art",
-        new: true         
+        new: true
     },
     {
         id: "1YB3-jztJ1M",
@@ -178,7 +208,7 @@ export const masterClassesData = [
         youtubeEmbedID: "1YB3-jztJ1M",
         poster: "/marketingABrand.png",
         category: "organisation",
-        new: true         
+        new: true
     },
     {
         id: "mqQrpFyijJY",
@@ -188,7 +218,7 @@ export const masterClassesData = [
         youtubeEmbedID: "mqQrpFyijJY",
         poster: "/makingABand.png",
         category: "organisation",
-        new: true         
+        new: true
     },
     {
         id: "mqQrpFyijJY",
@@ -198,7 +228,7 @@ export const masterClassesData = [
         youtubeEmbedID: "mqQrpFyijJY",
         poster: "/locationScouting.png",
         category: "video-production",
-        new: true         
+        new: true
     },
     {
         id: "0iWCW6XELdk",
@@ -208,7 +238,7 @@ export const masterClassesData = [
         youtubeEmbedID: "0iWCW6XELdk",
         poster: "/directing.png",
         category: "video-production",
-        new: true         
+        new: true
     },
     {
         id: "pxmP_Q3HQnY",
@@ -218,7 +248,7 @@ export const masterClassesData = [
         youtubeEmbedID: "pxmP_Q3HQnY",
         poster: "/independentFilmMaking.png",
         category: "video-production",
-        new: true         
+        new: true
     },
     {
         id: "lWpg87cHWW4",
@@ -228,6 +258,6 @@ export const masterClassesData = [
         youtubeEmbedID: "lWpg87cHWW4",
         poster: "/badDj.png",
         category: "music",
-        new: true        
+        new: true
     },
 ]
