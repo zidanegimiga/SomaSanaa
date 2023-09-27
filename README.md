@@ -10,7 +10,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project Architecture
 
-The project's architecture is inspired by the [https://feature-sliced.design/en/docs/get-started/quick-start](Feature-sliced design) specification.
+The project's architecture is inspired by the [https://feature-sliced.design/en/docs/get-started/quick-start] (Feature-sliced design) specification.
 
 It's feature-based where we could group all functional code related to an application feature inside a directory so that a developer can concentrate only on the particular directory.
 
